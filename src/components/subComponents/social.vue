@@ -17,14 +17,14 @@ export default {
         position: relative;
         text-align: left;
         margin-left: 10%;
-        bottom: 60%;
+        top: 25%;
         display: grid;
         grid-template-rows: repeat(5, 20%);
         grid-row-gap: 2%;
         .icon {
-            cursor: pointer;
             .iconImg {
                 width: 10%;
+                cursor: pointer;
             } 
         }
     }

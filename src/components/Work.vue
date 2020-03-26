@@ -1,6 +1,5 @@
 <template>
     <div>
-        <Header :headerList=headerList />
         <div class="row">
             <div class="col">
                 <div class="title">Blibli Game Voucher UX Enhancements</div>
@@ -32,7 +31,7 @@ export default {
     },
     data () {
         return {
-            headerList: ['Awards', 'Work', 'Favourites']
+            
         }
     }
 }

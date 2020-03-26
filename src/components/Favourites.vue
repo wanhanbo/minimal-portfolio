@@ -1,6 +1,5 @@
 <template>
     <div>
-        <Header :headerList=headerList />
         <div class="fav">
             <div class="heading">
                 <div class="title">Movies</div>
@@ -48,7 +47,7 @@ export default {
     },
     data () {
         return {
-            headerList: ['Work', 'Favourites', 'Awards']
+            
         }
     },
     methods: {

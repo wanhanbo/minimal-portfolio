@@ -3,18 +3,27 @@
     <div class="firefly" v-for="i in 15"></div>
       <section class="container">
         <!-- <CoverPhoto /> -->
-        <!-- <Social /> -->
         <!-- <div class="resumeButton">Resume</div> -->
-        <div class="intro">
-          <div class="sign">
-            <span class="fast-flicker">r</span>ahul <span class="flicker">j</span>ain
-          </div>
-          <div class="bio">
-            I design & develop web apps
+        <div class="left">
+          <Social />
+          <div>
+            <img class="cover" src="../assets/images/Rahul.png">
           </div>
         </div>
-        <div>
-          <img class="cover" src="../assets/images/Rahul.png">
+        <div class="right">
+          <div class="intro">
+            <div class="block"></div>
+            <div class="title">
+              <div class="hi">Hi, I am </div>
+              <div class="sign">
+                <span class="fast-flicker">r</span>ahul <span class="flicker">j</span>ain
+              </div>
+            </div>
+            <div class="bio">
+              I design & develop web apps
+            </div>
+          </div>
+          <div class="resumeButton">Resume</div>
         </div>
         <!-- <div class="box">
           <div class="block"></div>
@@ -30,14 +39,15 @@
 </template>
 
 <script>
+import Header from './subComponents/header'
 import CoverPhoto from './subComponents/coverPhoto'
 import Menu from './subComponents/menu'
 import Social from './subComponents/social'
 export default {
   name: 'Home',
   components: {
+    Header,
     CoverPhoto,
-    Menu,
     Social
   },
   data () {

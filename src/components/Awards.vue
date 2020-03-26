@@ -1,6 +1,5 @@
 <template>
     <div>
-        <Header :headerList=headerList />
         <div class="podium">
             <div ></div>
             <div class="stand">
