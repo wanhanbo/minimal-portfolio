@@ -1,6 +1,6 @@
 <template>
     <div class="cover">
-        <img class="coverPhoto" src="../../assets/images/DP1.png">
+        <img class="coverPhoto" src="../../assets/images/Rahul.png">
         <div class="strip"></div> 
     </div>
 </template>

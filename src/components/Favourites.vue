@@ -6,10 +6,9 @@
                 <div class="seeAll" @click="see('Movies')">see all</div>
             </div>
             <div class="content">
-                <div class="card">1</div>
-                <div class="card">1</div>
-                <div class="card">1</div>
-                <div class="card">1</div>
+                <div class="card" v-for="(movie, index) in movies" :key="index">
+                    <img :src="getImage(movie.pic)" class="image">
+                </div>
             </div>
         </div>
         <div class="fav">
@@ -18,10 +17,9 @@
                 <div class="seeAll" @click="see('Tvs')">see all</div>
             </div>
             <div class="content">
-                <div class="card">1</div>
-                <div class="card">1</div>
-                <div class="card">1</div>
-                <div class="card">1</div>
+                <div class="card" v-for="(tv, index) in tvs" :key="index">
+                    <img :src="getImage(tv.pic)" class="image">
+                </div>
             </div>
         </div>
         <div class="fav">
@@ -30,10 +28,9 @@
                 <div class="seeAll" @click="see('Books')">see all</div>
             </div>
             <div class="content">
-                <div class="card">1</div>
-                <div class="card">1</div>
-                <div class="card">1</div>
-                <div class="card">1</div>
+                <div class="card" v-for="(book, index) in books" :key="index">
+                    <img :src="getImage(book.pic)" class="image">
+                </div>
             </div>
         </div>
     </div>
@@ -47,13 +44,69 @@ export default {
     },
     data () {
         return {
-            
+            movies: [
+                {
+                    name: 'The Terminal',
+                    pic: 'theTerminalSmall.png'
+                },
+                {
+                    name: 'Parasite',
+                    pic: 'parasiteSmall.png'
+                },
+                {
+                    name: 'Zindagi Na Milegi Dobara',
+                    pic: 'znmdSmall.png'
+                },
+                {
+                    name: 'Yes Man',
+                    pic: 'yesManSmall.png'
+                }
+            ],
+            tvs: [
+                {
+                    name: 'Silicon Valley',
+                    pic: 'siliconValleySmall.png'
+                },
+                {
+                    name: 'Money Heist',
+                    pic: 'moneyHeistSmall.png'
+                },
+                {
+                    name: 'TVF Pitchers',
+                    pic: 'pitchersSmall.png'
+                },
+                {
+                    name: 'Friends',
+                    pic: 'friendsSmall.png'
+                }
+            ],
+            books: [
+                {
+                    name: 'Shoe Dog: Phil Knight',
+                    pic: 'shoeDogSmall.png'
+                },
+                {
+                    name: 'Crushing It: Gary Vaynerchuk',
+                    pic: 'crushingItSmall.png'
+                },
+                {
+                    name: 'Think & Grow Rich: Napoleon Hill',
+                    pic: 'thinkAndGrowRichSmall.png'
+                },
+                {
+                    name: 'Rich Dad Poor Dad: Robert Kiyosaki',
+                    pic: 'richDadPoorDadSmall.png'
+                }
+            ]
         }
     },
     methods: {
         see (fav) {
             console.log(fav)
             this.$router.push({name: 'Fav'+fav})
+        },
+        getImage (path) {
+            return require('../assets/images/' + path);
         }
     }
 }
@@ -88,6 +141,7 @@ export default {
                 -moz-box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
                 box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
                 height: 120px;
+                .image {}
             }
         }
     }

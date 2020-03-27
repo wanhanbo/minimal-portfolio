@@ -79,7 +79,7 @@ export default {
                 list-style: none;
                 text-align: right;
                 li {
-                    color: $gray;
+                    color: $lightGray;
                     display: inline;
                     font-size: 1.4em;
                     margin: 1%;

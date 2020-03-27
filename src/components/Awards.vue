@@ -1,5 +1,6 @@
 <template>
     <div>
+        <div class="firefly" v-for="i in 15"></div>
         <div class="podium">
             <div ></div>
             <div class="stand">
@@ -52,6 +53,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import './css/design.scss';
+@import './css/firefly.scss';
     .podium {
         margin: 10% 25%;
         display: grid;
@@ -59,22 +62,25 @@ export default {
         grid-template-rows: repeat(3, minmax(120px, 1fr));
         .stand {
             border-radius: 4px;
-            -webkit-box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
-            -moz-box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
-            box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
+            -webkit-box-shadow: 0px 0px 5px 2px $purpleXLight;
+            -moz-box-shadow: 0px 0px 5px 2px $purpleXLight;
+            box-shadow: 0px 0px 5px 2px $purpleXLight;
+            background: $white;
             .rank {
                 font-size: 2em;
                 margin-top: 4%;
                 font-weight: 600;
-                color: brown;
+                color: $purple;
             }
             .event {
                 margin-top: 10%;
                 padding: 1%;
                 font-size: 1.1em;
+                color: $black;
             }
             .product {
                 font-size: 1em;
+                color: $gray;
             }
         }
         #row2_1 {
