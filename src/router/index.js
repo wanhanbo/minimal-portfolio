@@ -7,15 +7,22 @@ import Favourites from '@/components/Favourites'
 import FavBooks from '@/components/FavBooks'
 import FavTvs from '@/components/FavTvs'
 import FavMovies from '@/components/FavMovies'
+import Test from '@/components/subComponents/card'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/test',
+      name: 'Test',
+      component: Test
     },
     {
       path: '/work',
