@@ -3,10 +3,6 @@
         <div class="icon" v-for="link in links">
             <a :href="link.url" target="blank"><img class="iconImg" :src="getImage(link)"></a>
         </div>
-        <!-- <div class="icon"><a :href="links.quora"><img class="iconImg" src="../../assets/icons/quora.png"></a></div>
-        <div class="icon"><a :href="links.linkedin"><img class="iconImg" src="../../assets/icons/linkedin-logo.png"></a></div>
-        <div class="icon"><a :href="links.github"><img class="iconImg" src="../../assets/icons/github-image.png"></a></div>
-        <div class="icon"><a :href="links.fb" target="blank"><img class="iconImg" src="../../assets/icons/facebook.png"></a></div> -->
     </div>
 </template>
 <script>

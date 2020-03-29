@@ -1,9 +1,4 @@
 <template>
-    <!-- <div class="header">
-        <div class="left" @click="goTo(0)"><span>{{ headerList[0]}}</span></div>
-        <div class="center" @click="goTo(1)"><span>{{ headerList[1]}}</span></div>
-        <div class="right" @click="goTo(2)"><span>{{ headerList[2]}}</span></div>
-    </div> -->
     <div class="header">
         <div class="logo" @click="goTo('Home')">
             <span class="highlight">&lt;</span>RAHUL<span class="highlight">/&gt;</span>
@@ -88,6 +83,7 @@ export default {
             }
             .item {
                 display: inline;
+                transition: color 0.1s ease-in;
                 &:hover {
                     color: $white !important;
                 }
@@ -102,23 +98,4 @@ export default {
             font-weight: 600;
         }
     }
-    // .header {
-    //     display: grid;
-    //     grid-template-columns: 38% 25% 37%;
-    //     align-items: center;
-    //     span {
-    //         cursor:pointer;
-    //     }
-    //     .left {
-    //         text-align: right !important;
-    //     }
-    //     .center {
-    //         font-size: 3em;
-    //         font-weight: 600;
-    //         color: #6bbd8c;
-    //     }
-    //     .right {
-    //         text-align: left !important;
-    //     }
-    // }
 </style>

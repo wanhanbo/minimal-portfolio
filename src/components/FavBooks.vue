@@ -7,8 +7,6 @@
         <div class="content">
             <div class="card" v-for="(book, index) in allBooks" :key="index">
                 <img :src="getImage(book.pic)" class="image">
-                <!-- <div class="title">Koi Mil Gaya</div>
-                <div class="strip"></div> -->
             </div>
         </div>
     </div>
@@ -76,7 +74,6 @@ export default {
                 -webkit-box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
                 -moz-box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
                 box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
-                .image {}
                 .strip {
                     width: 60%;
                     height: 10px;

@@ -2,73 +2,65 @@
     <div>
         <div class="firefly" v-for="i in 15"></div>
         <div class="row">
-                <div class="col" v-for="(project, index) in projects" :key="index">
-                    <img class="projectImage" :src="getImage(project.pic)" >
-                    <div class="strip"></div>
-                    <div class="text">
-                        <div class="title" :title="project.title">{{project.title}}</div>
-                        <!-- <div class="about">{{project.about}}</div>
-                        <div class="tags">
-                            <span v-for="tag in project.tech" :key="tag">{{tag}} </span>
-                        </div> -->
-                    </div>
-                </div> 
-            <!-- <div class="col">
-                <div class="title">Blibli Game Voucher UX Enhancements</div>
-                <div class="strip"></div>
-            </div>
-            <div class="col">
-                <div class="title">Blibli Game Voucher UX Enhancements</div>
-                <div class="strip"></div>
-            </div> -->
+                <div class="col" v-for="project in projects" :key="project">
+                    <Card :cardDetails="project"/>
+                </div>
         </div>
     </div>
 </template>
 <script>
-import Header from './subComponents/header'
+import Header from './subComponents/header';
+import Card from './subComponents/card';
 export default {
     name: 'Work',
     components: {
-        Header
+        Header,
+        Card
     },
     data () {
         return {
             projects: [
                 {
-                    title: 'Blibli',
+                    title: 'Blibli Game Voucher',
                     about: 'Game Voucher UI/UX Enhancements for Blibli.com serving millions of Indonesian Customers',
-                    tech: ['Vuejs', 'SCSS'],
-                    pic: 'blibliGameVoucher.png'
+                    tech: 'Vuejs, SCSS',
+                    pic: 'blibliGameVoucher.png',
+                    repo: 'https://www.blibli.com/digital/p/voucher-game'
                 },
                 {
                     title: 'Genie Aid',
                     about: 'Wireframe & UI Design freelance project for a LA based client',
-                    tech: ['Adobe Xd'],
-                    pic: 'genieAid.png'
+                    tech: 'Adobe Xd',
+                    pic: 'genieAid.png',
+                    repo: '#'
                 },
                 {
                     title: 'Apna Anaaj',
                     about: 'Crop Price prediction app based on rainfall, MSP datasets',
-                    tech: ['ML', 'Python', 'Javascript'],
-                    pic: 'ApnaAnaaj.png'
+                    tech: 'ML, Python, Javascript',
+                    pic: 'ApnaAnaaj.png',
+                    repo: 'https://github.com/rahuldkjain/Crop_Prediction'
                 },
                 {
                     title: 'Jaano India Chatbot',
                     about: 'AI enabled chatbot for huge Indian Statistical data',
-                    tech: ['NLP', 'Python'],
-                    pic: 'JaanoIndia.png'
+                    tech: 'NLP, Python',
+                    pic: 'JaanoIndia.png',
+                    repo: 'https://github.com/jainsomya972/jaano-india-chatbot'
                 },
                 {
-                    title: 'Alarm',
+                    title: 'Alarm Short Film',
                     about: 'Short film based on an engineering student common situation',
-                    tech: ['Adobe Premiere Pro', 'After Effects'],
-                    pic: 'alarm.png'
+                    tech: 'Adobe Premiere Pro, After Effects',
+                    pic: 'alarm.png',
+                    repo: 'https://www.youtube.com/watch?v=9O3tj0kcKY0'
                 },
                 {
                     title: 'Science Animations',
                     about: 'User interacting animations of physics experiments to understand the depth of physics',
-                    tech: ['Three.js', 'CSS'],
-                    pic: 'scienceAnimation.png'
+                    tech: 'Three.js, CSS',
+                    pic: 'scienceAnimation.png',
+                    repo: 'https://github.com/rahuldkjain/Three.js-Animations'
                 }
             ]
         }
@@ -90,38 +82,6 @@ export default {
         margin: 1%;
         .col {
             margin: 20% 25%;
-            .projectImage {
-                max-height: 100%;
-                display: block;
-                width: 100%;
-            }
-            .strip {
-                width: 60%;
-                height: 10px;
-                background: $purple;
-                position: relative;
-                right: 40%;
-                bottom: 10%;
-            }
-            .text {
-                text-align: left;
-                padding: 1%;
-                position: relative;
-                right: 40%;
-                width: 45%;
-                bottom: 30%;
-                .title {
-                    margin: 1% 0%;
-                    text-align: left;
-                    font-size: 2em;
-                }
-                .about {
-                    margin: 1% 0%;
-                }
-                .tags {
-                    margin: 1% 0%;
-                }
-            }
         }
     }
 </style>

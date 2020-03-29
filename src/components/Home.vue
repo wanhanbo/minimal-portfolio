@@ -2,8 +2,6 @@
   <div>
     <div class="firefly" v-for="i in 15"></div>
       <section class="container">
-        <!-- <CoverPhoto /> -->
-        <!-- <div class="resumeButton">Resume</div> -->
         <div class="left">
           <Social />
           <div>
@@ -20,34 +18,33 @@
               </div>
             </div>
             <div class="bio">
-              I design & develop web apps
+              <span>I <i>design</i> & develop </span>
+              <div class="wordSwipe">
+                <ul class="flip4">
+                  <li>web apps</li>
+                  <li>websites</li>
+                  <li>ui/ux</li>
+                  <li>animations</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="resumeButton">Resume</div>
+          <a href="../assets/files/" download="ResumeRahulJain.pdf">
+            <div class="resumeButton">Resume</div>
+          </a>
         </div>
-        <!-- <div class="box">
-          <div class="block"></div>
-            <div class="heading">
-              
-              </div>
-        </div>
-        <div class="bioBlock"></div>
-            <div class="subHeading">{{ bioText }}</div> -->
-        <!-- <Menu /> -->
     </section>
   </div>
 </template>
 
 <script>
 import Header from './subComponents/header'
-import CoverPhoto from './subComponents/coverPhoto'
 import Menu from './subComponents/menu'
 import Social from './subComponents/social'
 export default {
   name: 'Home',
   components: {
     Header,
-    CoverPhoto,
     Social
   },
   data () {

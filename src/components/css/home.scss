@@ -1,20 +1,8 @@
 @font-face {
     font-family: Clip;
     src: url('https://acupoftee.github.io/fonts/Clip.ttf');
-    // src: url("~/fonts/Clip.ttf");
+    // src: url("~~/~~/assets/fonts/Clip.ttf");
   }
-// * {
-//     background-image: url('https://yasio.pl/assets/img/a5d79c8.webp');
-//     background: black;
-//     color: white;
-//     background-color: #141114;
-//     background-image: linear-gradient(335deg, black 23px, transparent 23px),
-//       linear-gradient(155deg, black 23px, transparent 23px),
-//       linear-gradient(335deg, black 23px, transparent 23px),
-//       linear-gradient(155deg, black 23px, transparent 23px);
-//     background-size: 58px 58px;
-//     background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
-//   }
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -31,8 +19,6 @@
         position: absolute;
         left: 25%;
         top: 13%;
-        // box-shadow: 0 0 0.2rem #ffe6ff,0 0 1rem #C3073F;
-        // opacity: 60%;
         filter: contrast(2) brightness(1);
     }
     .resumeButton {
@@ -53,7 +39,6 @@
       }
     }
     .intro {
-        // display: grid;
         .title {
           font-family: 'Clip';;
           display: grid;
@@ -67,7 +52,7 @@
             font-size: 3em;
             text-align: end;
             animation: hi 1s forwards;
-            animation-delay: 1.5s;
+            animation-delay: 0.7s;
             visibility: hidden;
             opacity: 0;
           }
@@ -79,15 +64,10 @@
           position: absolute;
           top: 29%;
           left: 45%;
-          animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+          animation: mainBlock 1s cubic-bezier(.74, .06, .4, .92) forwards;
       }
       .sign {
         width: 100%;
-        // background-image: radial-gradient(
-        //     ellipse 50% 35% at 50% 50%,
-        //     $purple,
-        //     transparent
-        // );
         letter-spacing: 2;
         font-family: "Clip";
         text-transform: uppercase;
@@ -101,7 +81,7 @@
         -webkit-animation: headingFadeIn 1s forwards;
           -o-animation: headingFadeIn 1s forwards;
           animation: headingFadeIn 1s forwards;
-          animation-delay: 1.8s;
+          animation-delay: 1s;
           visibility: hidden;
         .flicker {
             background: transparent;
@@ -116,9 +96,41 @@
             font-size: 2em;
             text-align: left;
             padding-left: 7.5%;
-            padding-top: 1%;
+            padding-top: 5%;
+            .wordSwipe {
+              color: $purple;
+              overflow: hidden;
+              position: relative;
+              float: right;
+              right: 22%;
+              text-align: left;
+              height: 40px;
+              padding-top: 10px;
+              margin-top: -10px;
+              li {
+                font-weight: 550;
+                height: 45px;
+                margin-bottom: 45px;
+                display: block;
+              }
+              .flip4 {
+                animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+              }
+            }
         }
     }
+}
+@keyframes flip4 {
+  0% { margin-top: -360px; }
+  5% { margin-top: -270px; }
+  25% { margin-top: -270px; }
+  30% { margin-top: -180px; }
+  50% { margin-top: -180px; }
+  55% { margin-top: -90px; }
+  75% { margin-top: -90px; }
+  80% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
 }
 
 @keyframes blink {

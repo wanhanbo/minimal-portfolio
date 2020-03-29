@@ -3,25 +3,12 @@
         <div class="firefly" v-for="i in 15"></div>
         <div class="heading">
             <div class="title">Favourite Movies</div>
-            <div class="filter">
-                <select name="" id="">
-                    <option value="">Movies</option>
-                    <option value="">Tvs</option>
-                    <option value="">Books</option>
-                </select>
-            </div>
         </div>
         <div class="content">
             <div class="card" v-for="(movie, index) in allMovies" :key="index">
                 <img :src="getImage(movie.pic)" class="image">
-                <!-- <div class="title">Koi Mil Gaya</div>
-                <div class="strip"></div> -->
             </div>
         </div>
-        <!-- <div class="pagination">
-            <div class="btn back">back</div>
-            <div class="btn next">next</div>
-        </div> -->
     </div>
 </template>
 <script>
@@ -110,7 +97,6 @@ export default {
                 -webkit-box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
                 -moz-box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
                 box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
-                .image {}
                 .strip {
                     width: 60%;
                     height: 10px;
@@ -129,24 +115,6 @@ export default {
                         text-align: left;
                         font-size: 1.3em;
                 }
-            }
-        }
-        .pagination {
-            margin: 5% 2%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            .btn {
-                border-radius: 4px;
-                -webkit-box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
-                -moz-box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
-                box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
-                padding: 2% 4%;
-            }
-            .back {
-                justify-self: left;
-            }
-            .next {
-                justify-self: right;
             }
         }
     }
