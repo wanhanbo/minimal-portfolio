@@ -124,9 +124,10 @@ export default {
             }
             .seeAll {
                 text-align: right;
-                font-size: 0.6em;
+                font-size: 0.8em;
                 color: grey;
                 cursor: pointer;
+                align-self: center;
             }
         }
         .content {
@@ -134,6 +135,9 @@ export default {
             grid-template-columns: repeat(4, 1fr);
             grid-column-gap: 3%;
             margin: 2% 0%;
+            @media only screen and (max-device-width: 1199px) {
+                overflow: scroll;
+            }
             .card {
                 width: 100%;
                 border-radius: 4px;

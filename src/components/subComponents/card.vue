@@ -36,12 +36,12 @@ $black:#000;
 $lite-grey:rgba($black, .2);
 $lite-big-stone:rgba($big-stone, .7);
 
-$card-width:350px;
-$card-height:350px;
+$card-width:100%;
+$card-height:63vh;
 
 $thumb-height:200px;
 
-$border-radius:3px;
+$border-radius:1px;
 $box-shadow:0 1px 4px rgba($black, .3);
 $transition: cubic-bezier(.17,.67,.5,1.03);
 $timing-1:.4s .15s;
@@ -76,6 +76,10 @@ a {
 
 .card {
 	@include size($card-width, $card-height);
+	// @media only screen and (max-device-width: 1199px){
+	// 	width: 100%;
+	// 	height: 73vh;
+	// }
 	border-radius:$border-radius;
 	box-shadow:$box-shadow;
 	overflow:hidden;

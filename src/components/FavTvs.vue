@@ -82,12 +82,18 @@ export default {
         margin: 3% 5% 2% 5%;
         .heading {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            // grid-template-columns: repeat(2, 1fr);
             .title {
                 font-size: 2em;
-                text-align: left;
+                text-align: center;
                 font-weight: 600;
-                justify-self: left;
+                // justify-self: left;
+                @media only screen and (max-device-width: 1199px) {
+                    font-size: 1.3em;
+                    text-align: center;
+                    width: 100%;
+                    margin: 2% 2% 10% 2%;
+                }
             }
             .filter {
                 justify-self: right;
@@ -95,16 +101,20 @@ export default {
         }
         .content {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-column-gap: 5%;
-            grid-row-gap: 5%;
-            margin: 2%;
+            @media only screen and (min-device-width: 1200px) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-column-gap: 5%;
+                grid-row-gap: 5%;
+                margin: 2%;
+            }
             .card {
-                height: 250px;
-                border-radius: 4px;
-                -webkit-box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
-                -moz-box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
-                box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
+                border-radius: 1px;
+                height: 40vh;
+                @media only screen and (max-device-width: 1199px) {
+                    margin: 10% 5%;
+                    overflow: scroll;
+                    height: 65vh;
+                }
                 .strip {
                     width: 60%;
                     height: 10px;

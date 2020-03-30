@@ -78,10 +78,15 @@ export default {
 @import './css/firefly.scss';
     .row {
         display: grid;
-        grid-template-columns: 50% 50%;
+        @media only screen and (min-device-width: 1200px) {
+            grid-template-columns: 50% 50%;   
+        }
         margin: 1%;
         .col {
             margin: 20% 25%;
+            @media only screen and (max-device-width: 1199px) {
+                margin: 10% 6%; 
+            }
         }
     }
 </style>

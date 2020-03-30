@@ -18,7 +18,7 @@
               </div>
             </div>
             <div class="bio">
-              <span>I <i>design</i> & develop </span>
+              <span>I <i>design</i> & develop</span>
               <div class="wordSwipe">
                 <ul class="flip4">
                   <li>web apps</li>
