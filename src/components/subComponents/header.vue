@@ -7,17 +7,17 @@
             <ul>
                 <li @click="goTo('Work')" :class="{active: isWork}">
                     <div class="item">
-                        Work<span class="highlight">/&gt; </span>
+                        Work<span class="lightHighlight">/&gt; </span>
                     </div>
                 </li>
                 <li @click="goTo('Awards')" :class="{active: isAwards}">
                     <div class="item">
-                        Awards<span class="highlight">/&gt; </span>
+                        Awards<span class="lightHighlight">/&gt; </span>
                     </div>
                 </li>
                 <li @click="goTo('Favourites')" :class="{active: isFavourites}">
                     <div class="item">
-                        Favourites<span class="highlight">/&gt; </span>
+                        Favourites<span class="lightHighlight">/&gt; </span>
                     </div>
                 </li>
             </ul>
@@ -59,9 +59,16 @@ export default {
 @import '../css/firefly.scss';
     .header {
         display: grid;
+        @media only screen and (max-device-width: 1199px) {
+            grid-template-columns: 25% 75%;
+        }
         grid-template-columns: 30% 70%;
         align-items: center;
         .logo {
+            @media only screen and (max-device-width: 1199px) {
+                margin-left: 4%;
+                font-size: 20px;
+            }
             margin-left: 8%;
             text-align: left;
             font-size: 2em;
@@ -76,6 +83,9 @@ export default {
                 li {
                     color: $lightGray;
                     display: inline;
+                    @media only screen and (max-device-width: 1199px) {
+                        font-size: 12px;
+                    }
                     font-size: 1.4em;
                     margin: 1%;
                     cursor: pointer;
@@ -96,6 +106,9 @@ export default {
         .highlight {
             color: $purple;
             font-weight: 600;
+        }
+        .lightHighlight {
+            color: $purpleXLight;
         }
     }
 </style>

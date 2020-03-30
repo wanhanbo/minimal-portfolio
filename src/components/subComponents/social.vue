@@ -45,13 +45,25 @@ export default {
     .icons {
         position: relative;
         text-align: left;
-        margin-left: 10%;
         top: 25%;
         display: grid;
-        grid-template-rows: repeat(5, 20%);
-        grid-row-gap: 2%;
+        margin-left: 10%;
+        @media only screen and (max-device-width: 1199px) {
+            // margin-left: 30%;
+            grid-template-columns: repeat(5, 20%);
+            position: absolute;
+            top: 85%;
+            margin: 10%;
+        }
+        @media only screen and (min-device-width: 1200px) {
+            grid-template-rows: repeat(5, 20%);
+            grid-row-gap: 2%;
+        }
         .icon {
             .iconImg {
+                @media only screen and (max-device-width: 1199px) {
+                    width: 70%;
+                }
                 width: 10%;
                 cursor: pointer;
             } 

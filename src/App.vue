@@ -20,7 +20,14 @@ export default {
 </script>
 <style lang="scss">
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('~/assets/fonts/Poppins/Poppins-Regular.ttf');
+@font-face {
+   font-family: 'Poppins';
+   src: url('./assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Clip';
+    src: url('./assets/fonts/Clip.ttf') format('truetype');
+  }
 html, body {
   font-family: 'Poppins', sans-serif;
 }
