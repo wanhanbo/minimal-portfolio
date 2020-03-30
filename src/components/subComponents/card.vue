@@ -37,7 +37,8 @@ $lite-grey:rgba($black, .2);
 $lite-big-stone:rgba($big-stone, .7);
 
 $card-width:100%;
-$card-height:63vh;
+$card-height: 52vh;
+$card-mobile-height:70vh;
 
 $thumb-height:200px;
 
@@ -76,10 +77,9 @@ a {
 
 .card {
 	@include size($card-width, $card-height);
-	// @media only screen and (max-device-width: 1199px){
-	// 	width: 100%;
-	// 	height: 73vh;
-	// }
+	@media only screen and (max-device-width: 1199px){
+		@include size($card-width, $card-mobile-height);
+	}
 	border-radius:$border-radius;
 	box-shadow:$box-shadow;
 	overflow:hidden;
@@ -90,6 +90,9 @@ a {
 	}
 	.infos {
 		@include size(auto, $card-height);
+		@media only screen and (max-device-width: 1199px){
+			@include size(auto, $card-mobile-height);
+		}
 		position:relative;
 		padding:14px 24px;
 		background:$white;
@@ -110,7 +113,12 @@ a {
 			color:$lite-big-stone;
             display:inline-block;
 			margin-bottom: 24px;
-            padding-bottom:24px;
+			padding-bottom:24px;
+			@media only screen and (max-device-width: 1199px){
+				font-size: 10px;
+				margin-bottom: 4px;
+				padding-bottom: 8px;
+			}
 			border-bottom:1px solid $lite-grey;
 			transition:$timing-2 $transition;
 		}
