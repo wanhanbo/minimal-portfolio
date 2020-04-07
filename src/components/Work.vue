@@ -1,73 +1,66 @@
 <template>
     <div>
         <div class="firefly" v-for="i in 15"></div>
-        <div class="row">
-                <div class="col" v-for="project in projects" :key="project">
-                    <Card :cardDetails="project"/>
-                </div>
+        <span class="heading">Internships</span>
+        <ul>
+            <li v-for="(intern, index) in internships" :key="index">
+                <Internship :details="intern"/>
+            </li>
+        </ul>
+        <div class="heading">Open Source Projects</div>
+        <div class="open-source">
+            <div v-for="(project, index) in projects" :key="index">
+                <!-- <Card :cardDetails="project"/> -->
+                <OpenSourceCard :project="project"/>
+            </div>
+        </div>
+        <a :href="social.github.link" target="blank"><button class="btn">show more</button></a>
+        
+        <br>
+        <div class="heading">Miscellaneous Projects</div>
+        <div class="misc-projects">
+            <div v-for="(project, index) in misc_projects" :key="index">
+                <Card :cardDetails="project"/>
+            </div>
         </div>
     </div>
 </template>
 <script>
 import Header from './subComponents/header';
 import Card from './subComponents/card';
+import Internship from './subComponents/InternshipCard'
+import OpenSourceCard from './subComponents/openSourceCard';
+import { work, social } from '../portfolio.js'
 export default {
     name: 'Work',
     components: {
         Header,
-        Card
+        Card,
+        Internship,
+        OpenSourceCard
+    },
+    created () {
+        this.internships = work.internship;
+        this.projects = work.projects;
+        this.misc_projects = work.misc_projects;
+        this.social = social;
     },
     data () {
         return {
-            projects: [
-                {
-                    title: 'Blibli Game Voucher',
-                    about: 'Game Voucher UI/UX Enhancements for Blibli.com serving millions of Indonesian Customers',
-                    tech: 'Vuejs, SCSS',
-                    pic: 'blibliGameVoucher.png',
-                    repo: 'https://www.blibli.com/digital/p/voucher-game'
-                },
-                {
-                    title: 'Genie Aid',
-                    about: 'Wireframe & UI Design freelance project for a LA based client',
-                    tech: 'Adobe Xd',
-                    pic: 'genieAid.png',
-                    repo: '#'
-                },
-                {
-                    title: 'Apna Anaaj',
-                    about: 'Crop Price prediction app based on rainfall, MSP datasets',
-                    tech: 'ML, Python, Javascript',
-                    pic: 'ApnaAnaaj.png',
-                    repo: 'https://github.com/rahuldkjain/Crop_Prediction'
-                },
-                {
-                    title: 'Jaano India Chatbot',
-                    about: 'AI enabled chatbot for huge Indian Statistical data',
-                    tech: 'NLP, Python',
-                    pic: 'JaanoIndia.png',
-                    repo: 'https://github.com/jainsomya972/jaano-india-chatbot'
-                },
-                {
-                    title: 'Alarm Short Film',
-                    about: 'Short film based on an engineering student common situation',
-                    tech: 'Adobe Premiere Pro, After Effects',
-                    pic: 'alarm.png',
-                    repo: 'https://www.youtube.com/watch?v=9O3tj0kcKY0'
-                },
-                {
-                    title: 'Science Animations',
-                    about: 'User interacting animations of physics experiments to understand the depth of physics',
-                    tech: 'Three.js, CSS',
-                    pic: 'scienceAnimation.png',
-                    repo: 'https://github.com/rahuldkjain/Three.js-Animations'
-                }
-            ]
+            internships: [],
+            projects: [],
+            social: {},
+            misc_projects: []
         }
     },
     methods: {
         getImage (path) {
             return require('../assets/images/' + path);
+        }
+    },
+    computed: {
+        isMobile () {
+            return (((window.innerWidth > 0) ? window.innerWidth : screen.width) < 1200) ? true : false;
         }
     }
 }
@@ -76,17 +69,48 @@ export default {
 @import './css/design.scss';
 @import './css/glitch.scss';
 @import './css/firefly.scss';
-    .row {
-        display: grid;
-        @media only screen and (min-device-width: 1200px) {
-            grid-template-columns: 50% 50%;   
-        }
-        margin: 1%;
-        .col {
-            margin: 20% 25%;
-            @media only screen and (max-device-width: 1199px) {
-                margin: 10% 6%; 
-            }
+.btn {
+    color: black;
+    background: white;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.5% 1%;
+    margin: 1%;
+}
+.heading {
+    font-size: 2em;
+    color: $purple;
+    margin: 3%;
+}
+
+ul {
+    list-style-type: none;
+    li {
+        margin: 2% 0% 10% 0%;
+    }
+}
+.open-source, .misc-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+}
+@media only screen and (min-device-width: 1200px){
+    
+}
+@media only screen and (max-device-width: 1199px){
+    ul {
+        li {
+            margin: 2% 0% 15% 0%;
         }
     }
+    .open-source {
+        grid-template-columns: 100%;
+        margin: 0% 5%;
+    }
+    .misc-projects {
+        grid-template-columns: 100%;
+        margin: 0% 5%;
+    }
+}
 </style>

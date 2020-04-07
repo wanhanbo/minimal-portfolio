@@ -6,39 +6,22 @@
         </div>
         <div class="content">
             <div class="card" v-for="(book, index) in allBooks" :key="index">
-                <img :src="getImage(book.pic)" class="image">
+                <img :src="getImage(book.thumb)" class="image">
             </div>
         </div>
     </div>
 </template>
 <script>
+import { favourites } from '../portfolio.js'
 export default {
     name: 'FavBooks',
     data () {
         return {
-            allBooks: [
-                {
-                    name: 'Shoe Dog: Phil Knight',
-                    pic: 'shoeDog.png'
-                },
-                {
-                    name: 'Crushing It: Gary Vaynerchuk',
-                    pic: 'crushingIt.png'
-                },
-                {
-                    name: 'Think & Grow Rich: Napoleon Hill',
-                    pic: 'thinkAndGrowRich.png'
-                },
-                {
-                    name: 'Rich Dad Poor Dad: Robert Kiyosaki',
-                    pic: 'richDadPoorDad.png'
-                },
-                {
-                    name: 'One Day In December',
-                    pic: 'oneDayInDecember.png'
-                }
-            ]
+            allBooks: []
         }
+    },
+    created () {
+        this.allBooks = favourites.books
     },
     methods: {
         getImage (path) {

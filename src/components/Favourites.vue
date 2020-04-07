@@ -7,7 +7,7 @@
             </div>
             <div class="content">
                 <div class="card" v-for="(movie, index) in movies" :key="index">
-                    <img :src="getImage(movie.pic)" class="image">
+                    <img :src="getImage(movie.thumb)" class="image">
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@
             </div>
             <div class="content">
                 <div class="card" v-for="(tv, index) in tvs" :key="index">
-                    <img :src="getImage(tv.pic)" class="image">
+                    <img :src="getImage(tv.thumb)" class="image">
                 </div>
             </div>
         </div>
@@ -29,14 +29,15 @@
             </div>
             <div class="content">
                 <div class="card" v-for="(book, index) in books" :key="index">
-                    <img :src="getImage(book.pic)" class="image">
+                    <img :src="getImage(book.thumb)" class="image">
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
-import Header from './subComponents/header'
+import Header from './subComponents/header';
+import { favourites } from '../portfolio.js';
 export default {
     name: 'Favourites',
     components: {
@@ -44,61 +45,17 @@ export default {
     },
     data () {
         return {
-            movies: [
-                {
-                    name: 'The Terminal',
-                    pic: 'theTerminalSmall.png'
-                },
-                {
-                    name: 'Parasite',
-                    pic: 'parasiteSmall.png'
-                },
-                {
-                    name: 'Zindagi Na Milegi Dobara',
-                    pic: 'znmdSmall.png'
-                },
-                {
-                    name: 'Yes Man',
-                    pic: 'yesManSmall.png'
-                }
-            ],
-            tvs: [
-                {
-                    name: 'Silicon Valley',
-                    pic: 'siliconValleySmall.png'
-                },
-                {
-                    name: 'Money Heist',
-                    pic: 'moneyHeistSmall.png'
-                },
-                {
-                    name: 'TVF Pitchers',
-                    pic: 'pitchersSmall.png'
-                },
-                {
-                    name: 'Friends',
-                    pic: 'friendsSmall.png'
-                }
-            ],
-            books: [
-                {
-                    name: 'Shoe Dog: Phil Knight',
-                    pic: 'shoeDogSmall.png'
-                },
-                {
-                    name: 'Crushing It: Gary Vaynerchuk',
-                    pic: 'crushingItSmall.png'
-                },
-                {
-                    name: 'Think & Grow Rich: Napoleon Hill',
-                    pic: 'thinkAndGrowRichSmall.png'
-                },
-                {
-                    name: 'Rich Dad Poor Dad: Robert Kiyosaki',
-                    pic: 'richDadPoorDadSmall.png'
-                }
-            ]
+            movies: [],
+            tvs: [],
+            books: []
         }
+    },
+    created () {
+
+        this.movies = favourites.best4Movies;
+        this.tvs = favourites.best4Tv;
+        this.books = favourites.best4Books;
+        
     },
     methods: {
         see (fav) {
@@ -141,9 +98,6 @@ export default {
             .card {
                 width: 100%;
                 border-radius: 4px;
-                -webkit-box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
-                -moz-box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
-                box-shadow: 0px 0px 5px 0px rgba(107,189,140,1);
                 height: 120px;
                 .image {}
             }

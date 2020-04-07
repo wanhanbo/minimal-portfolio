@@ -1,38 +1,35 @@
 <template>
     <div class="icons">
-        <div class="icon" v-for="link in links">
-            <a :href="link.url" target="blank"><img class="iconImg" :src="getImage(link)"></a>
-        </div>
+        <ul>
+            <li>
+                <a :href="socialDetails.linkedin" target="blank"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a :href="socialDetails.github" target="blank"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+                <a :href="socialDetails.quora" target="blank"><i class="fab fa-quora"></i></a>
+            </li>
+            <li>
+                <a :href="socialDetails.instagram" target="blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+                <a :href="socialDetails.facebook" target="blank"><i class="fab fa-facebook"></i></a>
+            </li>
+        </ul>
     </div>
 </template>
 <script>
+import { social } from '../../portfolio.js';
 export default {
     name: 'Social',
     data () {
         return {
-            links: [
-                {
-                    url: 'https://www.linkedin.com/in/rahuldkjain/',
-                    source: 'linkedin-logo'
-                },
-                {
-                    url: 'https://github.com/rahuldkjain',
-                    source: 'github-image'
-                },
-                {
-                    url: 'https://www.quora.com/profile/Rahul-Jain-1489',
-                    source: 'quora'
-                },
-                {
-                    url: 'https://instagram.com/rahul_dk_jain',
-                    source: 'instagram'
-                },
-                {
-                    url: 'https://www.facebook.com/rahuljain997',
-                    source: 'facebook'
-                }
-            ]
+            socialDetails: []
         }
+    },
+    created () {
+        this.socialDetails = social;
     },
     methods: {
         getImage (link) {
@@ -42,31 +39,33 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    .icons {
-        position: relative;
-        text-align: left;
+.icons {
+    ul {
+        list-style-type: none;
+        position: absolute;
+        left: 1%;
         top: 25%;
-        display: grid;
-        margin-left: 10%;
-        @media only screen and (max-device-width: 1199px) {
-            // margin-left: 30%;
-            grid-template-columns: repeat(5, 20%);
+    }
+}
+@media only screen and (max-device-width: 1199px) {
+    .icons {
+        ul {
             position: absolute;
-            top: 85%;
-            margin: 10%;
-        }
-        @media only screen and (min-device-width: 1200px) {
-            grid-template-rows: repeat(5, 20%);
-            grid-row-gap: 2%;
-        }
-        .icon {
-            .iconImg {
-                @media only screen and (max-device-width: 1199px) {
-                    width: 70%;
-                }
-                width: 10%;
-                cursor: pointer;
-            } 
+            top: 80%;
+            width: 80%;
+            li {
+                display: inline;
+            }
         }
     }
+    i, svg {
+        font-size: 1em;
+    }
+}
+i, svg {
+    color: white !important;
+    font-size: 3em;
+    margin: 15% 2%;
+    cursor: pointer;
+}
 </style>

@@ -1,12 +1,12 @@
 <template>
     <div>
         <article class="card">
-            <div class="thumb" :style="{backgroundImage: 'url('+getImage(cardDetails.pic)+')'}"></div>
+            <div class="thumb" :style="{backgroundImage: 'url('+getImage(cardDetails.thumb)+')'}"></div>
             <div class="infos">
                 <h2 class="title">{{cardDetails.title}}</h2>
-                <h3 class="tech">{{cardDetails.tech}}</h3>
+                <h3 class="tech">{{getOutcome(cardDetails.outcome)}}</h3>
                 <p class="txt">{{cardDetails.about}}</p>
-                <h3 class="details"><a :href="cardDetails.repo" target="blank">Source</a></h3>
+                <h3 class="details"><a :href="cardDetails.source" target="blank">Source</a></h3>
             </div>
         </article>
     </div>
@@ -20,7 +20,10 @@ export default {
 	methods: {
 		getImage (path) {
 			return require('../../assets/images/'+path);
-		}
+		},
+		getOutcome (outcome) {
+			return outcome.toString();
+		} 
 	}
 }
 </script>
@@ -36,11 +39,11 @@ $black:#000;
 $lite-grey:rgba($black, .2);
 $lite-big-stone:rgba($big-stone, .7);
 
-$card-width:100%;
+$card-width:80%;
 $card-height: 52vh;
-$card-mobile-height:70vh;
+$card-mobile-height:52vh;
 
-$thumb-height:200px;
+$thumb-height:250px;
 
 $border-radius:1px;
 $box-shadow:0 1px 4px rgba($black, .3);
@@ -76,6 +79,7 @@ a {
 }
 
 .card {
+	margin: 4%;
 	@include size($card-width, $card-height);
 	@media only screen and (max-device-width: 1199px){
 		@include size($card-width, $card-mobile-height);

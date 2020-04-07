@@ -7,7 +7,7 @@ import Favourites from '@/components/Favourites'
 import FavBooks from '@/components/FavBooks'
 import FavTvs from '@/components/FavTvs'
 import FavMovies from '@/components/FavMovies'
-import Test from '@/components/subComponents/card'
+import Test from '@/components/test'
 
 Vue.use(Router)
 const router = new Router({

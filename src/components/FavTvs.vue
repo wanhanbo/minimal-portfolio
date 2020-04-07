@@ -6,67 +6,22 @@
         </div>
         <div class="content">
             <div class="card" v-for="(tv, index) in allTvs" :key="index">
-                <img :src="getImage(tv.pic)" class="image">
+                <img :src="getImage(tv.thumb)" class="image">
             </div>
         </div>
     </div>
 </template>
 <script>
+import { favourites } from '../portfolio.js'
 export default {
     name: 'FavTvs',
     data () {
         return {
-            allTvs: [
-                {
-                    name: '13 Reasons Why',
-                    pic: '13reasons.png'
-                },
-                {
-                    name: 'The Big Bang Theory',
-                    pic: 'bbt.png'
-                },
-                {
-                    name: 'TVF Cubicles',
-                    pic: 'cubicles.png'
-                },
-                {
-                    name: 'Flames',
-                    pic: 'flames.png'
-                },
-                {
-                    name: 'Friends',
-                    pic: 'friends.png'
-                },
-                {
-                    name: "I'm Mature",
-                    pic: 'immature.png'
-                },
-                {
-                    name: 'Kota Factory',
-                    pic: 'kotaFactory.png'
-                },
-                {
-                    name: 'Money Heist',
-                    pic: 'moneyHeist.png'
-                },
-                {
-                    name: 'Operation MBBS',
-                    pic: 'opMBBS.png'
-                },
-                {
-                    name: 'TVF Pitchers',
-                    pic: 'pitchers.png'
-                },
-                {
-                    name: 'Silicon Valley',
-                    pic: 'silicon.png'
-                },
-                {
-                    name: 'TVF Tripling',
-                    pic: 'tripling.png'
-                }
-            ]
+            allTvs: []
         }
+    },
+    created () {
+        this.allTvs = favourites.tv;
     },
     methods: {
         getImage (path) {
@@ -82,12 +37,10 @@ export default {
         margin: 3% 5% 2% 5%;
         .heading {
             display: grid;
-            // grid-template-columns: repeat(2, 1fr);
             .title {
                 font-size: 2em;
                 text-align: center;
                 font-weight: 600;
-                // justify-self: left;
                 @media only screen and (max-device-width: 1199px) {
                     font-size: 1.3em;
                     text-align: center;
