@@ -24,14 +24,14 @@ export default {
     },
     methods: {
         getImage (path) {
-            return require('../../assets/images/certificates/' + path);
+            return require('../assets/images/certificates/' + path);
         },
     },
     computed: {}
 }
 </script>
 <style lang="scss" scoped>
-@import '../css/design.scss';
+@import '../assets/css/design.scss';
 .box {
     width: 80%;
     height: 60vh;

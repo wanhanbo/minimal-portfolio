@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Header from './components/subComponents/header'
+import Header from './subComponents/header'
 export default {
   name: 'App',
   components: {
@@ -27,7 +27,15 @@ export default {
 @font-face {
     font-family: 'Clip';
     src: url('./assets/fonts/Clip.ttf') format('truetype');
-  }
+}
+@font-face {
+    font-family: 'VT323-Regular';
+    src: url('./assets/fonts/VT323-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Audiowide';
+    src: url('./assets/fonts/Audiowide-Regular.ttf') format('truetype');
+}
 html, body {
   font-family: 'Poppins', sans-serif;
 }

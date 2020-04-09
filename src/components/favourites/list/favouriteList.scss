@@ -1,0 +1,78 @@
+.fav {
+    margin: 1% 5% 2% 5%;
+    .heading {
+        display: grid;
+        grid-template-columns: 10% 80%;
+        align-items: center;
+        font-family: 'Audiowide';
+        color: $purple;
+        #back {
+            font-size: 2em;
+            cursor: pointer;
+            color: white;
+        }
+        .title {
+            font-size: 2em;
+            text-align: center;
+            font-weight: 600;
+        }
+    }
+    .content {
+        display: grid;
+        .card {
+            border-radius: 1px;
+            height: 40vh;
+            .strip {
+                width: 60%;
+                height: 10px;
+                background: brown;
+                position: relative;
+                top: 60%;
+                right: 10%;
+            }
+            .title {
+                    position: relative;
+                    top: 60%;
+                    right: 47%;
+                    display: grid;
+                    justify-items: end;
+                    align-items: end;
+                    text-align: left;
+                    font-size: 1.3em;
+            }
+        }
+    }
+}
+@media only screen and (min-device-width: 1200px) {
+    .fav {
+        .content {
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 5%;
+            grid-row-gap: 5%;
+            margin: 2%;
+        }
+    }
+}
+@media only screen and (max-device-width: 1199px) {
+    .fav {
+        .heading {
+            margin-bottom: 10%;
+            #back {
+                font-size: 1em;
+            }
+            .title {
+                font-size: 1.3em;
+                text-align: center;
+                width: 100%;
+                margin: 0;
+            }
+        }
+        .content {
+            .card {
+                margin: 10% 5%;
+                overflow: scroll;
+                height: 65vh;
+            }
+        }
+    }
+}

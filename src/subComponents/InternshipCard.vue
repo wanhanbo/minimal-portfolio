@@ -32,7 +32,7 @@ export default {
     },
     methods: {
         getImage (path) {
-            return require('../../assets/images/certificates/' + path);
+            return require('../assets/images/certificates/' + path);
         },
     },
     computed: {
@@ -43,7 +43,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../css/design.scss';
+@import '../assets/css/design.scss';
 .cardContainer {
     text-align: center;
     margin: 1%;

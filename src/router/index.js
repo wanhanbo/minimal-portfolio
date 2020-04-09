@@ -1,12 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/Home'
-import Work from '@/components/Work'
-import Awards from '@/components/Awards'
-import Favourites from '@/components/Favourites'
-import FavBooks from '@/components/FavBooks'
-import FavTvs from '@/components/FavTvs'
-import FavMovies from '@/components/FavMovies'
+import Home from '@/components/home/Home'
+import Work from '@/components/work/Work'
+import Awards from '@/components/awards/Awards'
+import Favourites from '@/components/favourites/Favourites'
+import FavouriteList from '@/components/favourites/list/FavouriteList'
 import Test from '@/components/test'
 
 Vue.use(Router)
@@ -51,27 +49,11 @@ const router = new Router({
       }
     },
     {
-      path: '/favourites/movies',
-      name: 'FavMovies',
-      component: FavMovies,
+      path: '/favourites/:kind',
+      name: 'FavouriteList',
+      component: FavouriteList,
       meta: {
-        title: 'Fav Movies'
-      }
-    },
-    {
-      path: '/favourites/tv',
-      name: 'FavTvs',
-      component: FavTvs,
-      meta: {
-        title: 'Fav TVs'
-      }
-    },
-    {
-      path: '/favourites/books',
-      name: 'FavBooks',
-      component: FavBooks,
-      meta: {
-        title: 'Fav Books'
+        title: 'Favourites'
       }
     }
   ]

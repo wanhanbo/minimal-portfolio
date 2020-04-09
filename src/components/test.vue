@@ -17,13 +17,9 @@ export default {
     created () {
     },
     methods: {
-        getImage (path) {
-            return require('../assets/images/certificates/' + path);
-        },
     },
     computed: {}
 }
 </script>
 <style lang="scss" scoped>
-@import './css/design.scss';
 </style>

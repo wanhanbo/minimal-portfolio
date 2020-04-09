@@ -1,23 +1,23 @@
 <template>
     <div class="header">
         <div class="logo" @click="goTo('Home')">
-            <span class="highlight">&lt;</span>RAHUL<span class="highlight">/&gt;</span>
+            <span class="highlight">&lt;</span><span class="logoText">{{content.logoText}}</span><span class="highlight">/&gt;</span>
         </div>
         <div class="menu">
             <ul>
                 <li @click="goTo('Work')" :class="{active: isWork}">
                     <div class="item">
-                        Work<span class="lightHighlight">/&gt; </span>
+                        {{content.work}}<span class="lightHighlight">/&gt; </span>
                     </div>
                 </li>
                 <li @click="goTo('Awards')" :class="{active: isAwards}">
                     <div class="item">
-                        Awards<span class="lightHighlight">/&gt; </span>
+                        {{content.awards}}<span class="lightHighlight">/&gt; </span>
                     </div>
                 </li>
                 <li @click="goTo('Favourites')" :class="{active: isFavourites}">
                     <div class="item">
-                        Favourites<span class="lightHighlight">/&gt; </span>
+                        {{content.favourites}}<span class="lightHighlight">/&gt; </span>
                     </div>
                 </li>
             </ul>
@@ -25,6 +25,7 @@
     </div>
 </template>
 <script>
+import { header } from '../portfolio.js';
 export default {
     name: 'Header',
     props: {
@@ -32,8 +33,12 @@ export default {
     },
     data () {
         return {
-            currentPage: ''
+            currentPage: '',
+            content: {}
         }
+    },
+    created () {
+        this.content = header;
     },
     methods: {
         goTo(page) {
@@ -55,8 +60,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../css/design.scss';
-@import '../css/firefly.scss';
+@import '../assets/css/design.scss';
+@import '../assets/css/firefly.scss';
     .header {
         display: grid;
         @media only screen and (max-device-width: 1199px) {
@@ -74,6 +79,11 @@ export default {
             font-size: 2em;
             font-weight: 600;
             cursor: pointer;
+            .logoText {
+                font-family: 'VT323-Regular';
+                text-transform: uppercase;
+                font-size: 1.8em;
+            }
         }
         .menu {
             width: 100%;

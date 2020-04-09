@@ -19,7 +19,7 @@ export default {
 	},
 	methods: {
 		getImage (path) {
-			return require('../../assets/images/'+path);
+			return require('../assets/images/'+path);
 		},
 		getOutcome (outcome) {
 			return outcome.toString();
@@ -83,6 +83,7 @@ a {
 	@include size($card-width, $card-height);
 	@media only screen and (max-device-width: 1199px){
 		@include size($card-width, $card-mobile-height);
+		margin: 12%;
 	}
 	border-radius:$border-radius;
 	box-shadow:$box-shadow;
