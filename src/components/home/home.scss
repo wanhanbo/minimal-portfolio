@@ -7,6 +7,7 @@ a {
   text-decoration: none;
 }
 .container {
+  overflow-y: scroll;
   .left {
     background: black;
   }
@@ -173,27 +174,28 @@ a {
       }
       .bio {
         font-size: 1em;
-        width: 100%;
+        width: 350px;
         position: absolute;
-        top: 57%;
-        margin-top: 10%;
-        padding: 2% 13%;
+        top: 58%;
+        margin-top: 3%;
+        padding: 0;
+        left: 2%;
+        overflow: hidden;
         .bioText {
-          padding-left: 5%;
+          padding-left: 14%;
         }
         .guide {
           font-size: 10px !important;
           width: 90%;
-          position: relative;
-          right: 7%;
+          padding-left: 5%;
         }
         .wordSwipe {
-          right: 30%;
+          right: 10%;
           height: 30px;
         }
         .resumeButton {
           position: relative;
-          left: 25%;
+          left: 38%;
           top: 90%;
           font-size: 18px;
           width: 25%;
@@ -211,9 +213,57 @@ a {
     .intro {
       .bio {
         .wordSwipe {
-          right: 25%;
+          right: 10%;
           height: 30px;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-height: 812px) and (max-device-width: 375px){
+  .container {
+    .intro {
+      .bio {
+        font-size: 1em;
+        width: 355px;
+        top: 48%;
+        .wordSwipe {
+          right: 12%;
+        }
+        .guide {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-height: 736px) and (max-device-width: 414px){
+  .container {
+    .intro {
+      .bio {
+        font-size: 1.1em;
+        width: 400px;
+        top: 55%;
+        .wordSwipe {
+          right: 13%;
+        }
+        .guide {
+          font-size: 13px !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-height: 667px) and (max-device-width: 375px) {
+  .container {
+    .intro {
+      .bio {
+        top: 55%;
+        font-size: 1em;
+        width: 370px;
       }
     }
   }

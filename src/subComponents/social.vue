@@ -65,4 +65,19 @@ i, svg {
         font-size: 2em;
     }
 }
+@media only screen and (max-device-height: 812px) and (max-device-width: 375px){
+  .icons {
+        ul {
+            top: 85%;
+        }
+    }
+}
+
+@media only screen and (max-device-height: 667px) and (max-device-width: 375px) {
+    .icons {
+        ul {
+            top: 95%;
+        }
+    }
+}
 </style>
