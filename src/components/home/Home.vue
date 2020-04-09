@@ -1,12 +1,5 @@
 <template>
   <div>
-    <div ref="loader" id="loader">
-      <semipolar-spinner
-        :animation-duration="2000"
-        :size="65"
-        color="#5918df"
-      />
-    </div>
     <transition name="bounce">
       <div ref="homepage">
         <div class="firefly" v-for="i in 15" :key="i"></div>
@@ -14,7 +7,7 @@
           <div class="left">
             <Social />
             <div>
-              <img class="cover" :src="getImage('Rahul.png')">
+              <img class="cover" :src="getImage(content.coverImage)">
             </div>
           </div>
           <div class="right">
@@ -34,14 +27,24 @@
                   </ul>
                 </div>
                 <div class="guide">{{content.bio}}</div>
+                <a :href="content.buttons.resume.link" target="blank" download>
+                  <div class="resumeButton">{{content.buttons.resume.placeholder}}</div>
+                </a>
               </div>
             </div>
-            <a :href="content.buttons.resume.link" target="blank" download>
-              <div class="resumeButton">{{content.buttons.resume.placeholder}}</div>
-            </a>
           </div>
         </section>
       </div>
+      <!-- <div v-if="!isMobile" class="m_container">
+        <div class="m_cover">
+          <img :src="getImage(content.coverImage)">
+        </div>
+        <div class="m_welcome"></div>
+        <div class="m_skills"></div>
+        <div class="bio"></div>
+        <div class="m_resume"></div>
+        <div class="m_social"></div>
+      </div> -->
     </transition>
   </div>
 </template>

@@ -54,7 +54,7 @@ i, svg {
     .icons {
         ul {
             position: absolute;
-            top: 80%;
+            top: 90%;
             width: 80%;
             li {
                 display: inline;

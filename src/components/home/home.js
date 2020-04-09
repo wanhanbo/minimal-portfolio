@@ -1,20 +1,13 @@
 import Header from '../../subComponents/header';
 import Social from '../../subComponents/social';
 import { home } from '../../portfolio.js';
-import { SemipolarSpinner  } from 'epic-spinners';
 export default {
   name: 'Home',
   components: {
     Header,
-    Social,
-    SemipolarSpinner
+    Social
   },
   mounted () {
-    this.$refs.homepage.style.display = 'none';
-    setTimeout(() => {
-      this.$refs.loader.style.display = 'none'; 
-      this.$refs.homepage.style.display = ''; 
-      }, 2100);
   },
   created () {
     this.content = home;
@@ -27,6 +20,11 @@ export default {
   methods: {
     getImage(path) {
       return require('../../assets/images/'+path);
+    }
+  },
+  computed: {
+    isMobile () {
+      return (((window.innerWidth > 0) ? window.innerWidth : screen.width) < 1200) ? true : false;
     }
   }
 }
