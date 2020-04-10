@@ -1,4 +1,4 @@
-# minimal-portfolio
+# Developer Portfolio ⚡️ [![GitHub](https://img.shields.io/github/license/rahuldkjain/minimal-portfolio?color=blue)](https://github.com/rahuldkjain/minimal-portfolio/blob/master/LICENSE.md)
 
 > A Vue.js project
 
