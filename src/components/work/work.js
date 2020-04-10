@@ -2,6 +2,7 @@ import Header from '../../subComponents/header';
 import Card from '../../subComponents/card';
 import Internship from '../../subComponents/InternshipCard'
 import OpenSourceCard from '../../subComponents/openSourceCard';
+import BuzzerButton from '../../subComponents/buzzerButton';
 import { work } from '../../portfolio.js'
 export default {
     name: 'Work',
@@ -10,6 +11,7 @@ export default {
         Card,
         Internship,
         OpenSourceCard,
+        BuzzerButton
     },
     created () {
         this.content = work;

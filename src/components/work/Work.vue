@@ -16,9 +16,8 @@
                     <OpenSourceCard :project="project"/>
                 </div>
             </div>
-            <a :href="content.projects.buttons.showMore.link" target="blank">
-                <button class="btn">{{content.projects.buttons.showMore.placeholder}}</button>
-            </a>
+            <BuzzerButton :link="content.projects.buttons.showMore.link" 
+            target="blank" :placeholder="content.projects.buttons.showMore.placeholder"/>
         </div>
         
         <div :v-if="display(content.misc_projects.data)">

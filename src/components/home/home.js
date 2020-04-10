@@ -1,11 +1,13 @@
 import Header from '../../subComponents/header';
 import Social from '../../subComponents/social';
+import BuzzerButton from '../../subComponents/buzzerButton';
 import { home } from '../../portfolio.js';
 export default {
   name: 'Home',
   components: {
     Header,
-    Social
+    Social,
+    BuzzerButton
   },
   mounted () {
   },

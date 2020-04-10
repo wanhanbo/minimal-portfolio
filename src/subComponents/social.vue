@@ -38,10 +38,8 @@ export default {
 <style lang="scss" scoped>
 .icons {
     ul {
+        padding: 0;
         list-style-type: none;
-        position: absolute;
-        left: 1%;
-        top: 25%;
     }
 }
 i, svg {
@@ -53,9 +51,6 @@ i, svg {
 @media only screen and (max-device-width: 1199px) {
     .icons {
         ul {
-            position: absolute;
-            top: 90%;
-            width: 80%;
             li {
                 display: inline;
             }
@@ -63,21 +58,6 @@ i, svg {
     }
     i, svg {
         font-size: 2em;
-    }
-}
-@media only screen and (max-device-height: 812px) and (max-device-width: 375px){
-  .icons {
-        ul {
-            top: 85%;
-        }
-    }
-}
-
-@media only screen and (max-device-height: 667px) and (max-device-width: 375px) {
-    .icons {
-        ul {
-            top: 95%;
-        }
     }
 }
 </style>

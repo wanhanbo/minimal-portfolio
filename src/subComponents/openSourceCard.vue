@@ -45,6 +45,10 @@ export default {
     color: black;
     padding: 2%;
     margin: 4% 0%;
+    border-radius: 1px;
+    -webkit-box-shadow: 1px 0px 6px 2px rgba(187,192,196,0.75);
+    -moz-box-shadow: 1px 0px 6px 2px rgba(187,192,196,0.75);
+    box-shadow: 1px 0px 6px 2px rgba(187,192,196,0.75);
     .repo {
         font-size: 1.2em;
         font-weight: 600;

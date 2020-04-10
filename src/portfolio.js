@@ -119,14 +119,14 @@ const work = {
             {
                 thumb: 'genieAid.png',
                 title: 'Genie Aid',
-                about: 'Wireframe & UI Design freelance project for a LA based client',
+                about: 'Wireframe & UI Design Freelance project for a LA based client. Designed 10 pages, logo and one intro video',
                 outcome: ['Adobe Xd'],
                 source: ''
             },
             {
                 thumb: 'alarm.png',
                 title: 'Alarm Short Film',
-                about: 'Short film based on an engineering student common situation',
+                about: 'The whole film revolves around the relationship between an engineering student with alarm. Watch the film on youtube by clicking the link down below.',
                 outcome: ['Adobe Premiere Pro', 'After Effects'],
                 source: 'https://www.youtube.com/watch?v=9O3tj0kcKY0'
             }

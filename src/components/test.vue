@@ -1,6 +1,5 @@
 <template>
-    <div >
-        
+    <div>
     </div>
 </template>
 <script>
@@ -8,13 +7,15 @@ export default {
     name: 'Test',
     props: {
     },
-    components: {},
+    components: {
+    },
     data () {
         return {
-            
+            content: {}
         }
     },
     created () {
+        this.content = home;
     },
     methods: {
     },
