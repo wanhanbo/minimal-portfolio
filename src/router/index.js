@@ -1,23 +1,23 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/Home'
-import Work from '@/components/Work'
-import Awards from '@/components/Awards'
-import Favourites from '@/components/Favourites'
-import FavBooks from '@/components/FavBooks'
-import FavTvs from '@/components/FavTvs'
-import FavMovies from '@/components/FavMovies'
-import Test from '@/components/subComponents/card'
+import Home from '@/components/home/Home'
+import Work from '@/components/work/Work'
+import Awards from '@/components/awards/Awards'
+import Favourites from '@/components/favourites/Favourites'
+import FavouriteList from '@/components/favourites/list/FavouriteList'
+import Test from '@/components/test'
 
 Vue.use(Router)
-
-export default new Router({
+const router = new Router({
   mode: 'history',
   routes: [
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      meta: {
+        title: 'RJ Portfolio'
+      }
     },
     {
       path: '/test',
@@ -27,32 +27,39 @@ export default new Router({
     {
       path: '/work',
       name: 'Work',
-      component: Work
+      component: Work,
+      meta: {
+        title: 'Work: RJ'
+      }
     },
     {
       path: '/awards',
       name: 'Awards',
-      component: Awards
+      component: Awards,
+      meta: {
+        title: 'Awards: RJ'
+      }
     },
     {
       path: '/favourites',
       name: 'Favourites',
-      component: Favourites
+      component: Favourites,
+      meta: {
+        title: 'Favourites: RJ'
+      }
     },
     {
-      path: '/favourites/movies',
-      name: 'FavMovies',
-      component: FavMovies
-    },
-    {
-      path: '/favourites/tv',
-      name: 'FavTvs',
-      component: FavTvs
-    },
-    {
-      path: '/favourites/books',
-      name: 'FavBooks',
-      component: FavBooks
+      path: '/favourites/:kind',
+      name: 'FavouriteList',
+      component: FavouriteList,
+      meta: {
+        title: 'Favourites'
+      }
     }
   ]
 })
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title
+  next()
+})
+export default router;

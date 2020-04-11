@@ -1,16 +1,29 @@
 <template>
   <div id="app">
-    <Header/>
-    <router-view/>
+    <div ref="loader" id="loader">
+      <semipolar-spinner :animation-duration="2000" :size="65" color="#5918df"/>
+    </div>
+    <div ref="portfolio">
+      <Header/>
+      <router-view/>
+    </div>
   </div>
 </template>
-
 <script>
-import Header from './components/subComponents/header'
+import Header from './subComponents/header';
+import { SemipolarSpinner  } from 'epic-spinners';
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    SemipolarSpinner
+  },
+  mounted () {
+    this.$refs.portfolio.style.display = 'none';
+    setTimeout(() => {
+      this.$refs.loader.style.display = 'none'; 
+      this.$refs.portfolio.style.display = ''; 
+      }, 2100);
   },
   data () {
     return {
@@ -19,8 +32,22 @@ export default {
 }
 </script>
 <style lang="scss">
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('~/assets/fonts/Poppins/Poppins-Regular.ttf');
+@font-face {
+   font-family: 'Poppins';
+   src: url('./assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Clip';
+    src: url('./assets/fonts/Clip.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'VT323-Regular';
+    src: url('./assets/fonts/VT323-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Audiowide';
+    src: url('./assets/fonts/Audiowide-Regular.ttf') format('truetype');
+}
 html, body {
   font-family: 'Poppins', sans-serif;
 }
@@ -38,4 +65,15 @@ html, body {
   overflow: auto;
 }
 
+#loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+@media only screen and (max-device-width: 1199px) {
+  #loader {
+    top: 45%;
+    left: 45%;
+  }
+}
 </style>
