@@ -9,14 +9,20 @@ Just change `src/portfolio.js` to get your personal portfolio . Feel free to use
 
 But if you want to **contribute** and make this much better for other developer have a look at [Issues](https://github.com/rahuldkjain/minimal-portfolio/issues).
 
-If you created something awesome and want to contribute then feel free to open Please don't hesitate to open an [pull request](https://github.com/saadpasta/developerFolio/pulls).
+If you created something awesome and want to contribute then feel free to open Please don't hesitate to open an [pull request](https://github.com/rahuldkjain/minimal-portfolio/pulls).
 
 ## Sections 
+```
 :dart: **Home** (Introduction, Skills, Contact me)
+  
 :dart: **Work** (Internships, Projects, Miscellaneous Projects)
+  
 :dart:  **Achievements And Certifications**
+  
 :dart: **Favourites** (Movies, TV/ Web Shows, Books)
 
+```
+  
 
 ## Getting Started 🚀
 
