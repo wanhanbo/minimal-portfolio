@@ -1,5 +1,5 @@
 # :muscle: Awesome Portfolio Template :sparkles:
-![](https://img.shields.io/github/license/rahuldkjain/minimal-portfolio?color=8e5dee&style=plastic) ![](https://img.shields.io/github/labels/rahuldkjain/minimal-portfolio/help wanted?color=%238e5dee&style=plastic) ![](https://img.shields.io/github/issues/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)   ![](https://img.shields.io/github/last-commit/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)  ![](https://img.shields.io/github/languages/code-size/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)
+![](https://img.shields.io/github/license/rahuldkjain/minimal-portfolio?color=8e5dee&style=plastic) ![](https://img.shields.io/github/labels/rahuldkjain/minimal-portfolio/help%20wanted?color=%238e5dee&style=plastic) ![](https://img.shields.io/github/issues/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)   ![](https://img.shields.io/github/last-commit/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)  ![](https://img.shields.io/github/languages/code-size/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)
 
 #### A clean, minimal and responsive portfolio template for All!
 
