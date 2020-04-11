@@ -1,4 +1,4 @@
-#  Awesome Portfolio Template :sparkle:
+# :muscle: Awesome Portfolio Template :sparkles:
 ![](https://img.shields.io/github/license/rahuldkjain/minimal-portfolio?color=8e5dee&style=plastic) ![](https://img.shields.io/github/labels/rahuldkjain/minimal-portfolio/help wanted?color=%238e5dee&style=plastic) ![](https://img.shields.io/github/issues/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)   ![](https://img.shields.io/github/last-commit/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)  ![](https://img.shields.io/github/languages/code-size/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)
 
 #### A clean, minimal and responsive portfolio template for All!
@@ -12,17 +12,19 @@ But if you want to **contribute** and make this much better for other developer 
 If you created something awesome and want to contribute then feel free to open Please don't hesitate to open an [pull request](https://github.com/rahuldkjain/minimal-portfolio/pulls).
 
 ## Sections 
-```
+
 :dart: **Home** (Introduction, Skills, Contact me)
-  
+
+
 :dart: **Work** (Internships, Projects, Miscellaneous Projects)
-  
+
+
 :dart:  **Achievements And Certifications**
   
+
 :dart: **Favourites** (Movies, TV/ Web Shows, Books)
 
-```
-  
+
 
 ## Getting Started 🚀
 
@@ -136,4 +138,4 @@ If you can help us with these. Please don't hesitate to open a [pull request](ht
 - Customisable Color Scheme feature
 - Add More Sections
 
-Designed & Developed with :heart_decoration: by [Rahul Jain](https://github.com/rahuldkjain "Rahul Jain")
+Designed & Developed with :hearts: by [Rahul Jain](https://github.com/rahuldkjain "Rahul Jain")
