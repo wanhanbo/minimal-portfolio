@@ -1,4 +1,4 @@
-#  Awesome Portfolio Template
+#  Awesome Portfolio Template :sparkle:
 ![](https://img.shields.io/github/license/rahuldkjain/minimal-portfolio?color=8e5dee&style=plastic) ![](https://img.shields.io/github/labels/rahuldkjain/minimal-portfolio/help wanted?color=%238e5dee&style=plastic) ![](https://img.shields.io/github/issues/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)   ![](https://img.shields.io/github/last-commit/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)  ![](https://img.shields.io/github/languages/code-size/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)
 
 #### A clean, minimal and responsive portfolio template for All!
@@ -9,13 +9,14 @@ Just change `src/portfolio.js` to get your personal portfolio . Feel free to use
 
 But if you want to **contribute** and make this much better for other developer have a look at [Issues](https://github.com/rahuldkjain/minimal-portfolio/issues).
 
-If you created something awesome and want to contribute then feel free to open Please don't hesitate to open an [pull request](https://github.com/rahuldkjain/minimal-portfolio/pulls).
+If you created something awesome and want to contribute then feel free to open Please don't hesitate to open an [pull request](https://github.com/saadpasta/developerFolio/pulls).
 
 ## Sections 
-:fa-home: **Home** (Introduction, Skills, Contact me)
-:fa-laptop: **Work** (Internships, Projects, Miscellaneous Projects)
-:fa-trophy:  **Achievements And Certifications**
-:fa-heart: **Favourites** (Movies, TV/ Web Shows, Books)
+:dart: **Home** (Introduction, Skills, Contact me)
+:dart: **Work** (Internships, Projects, Miscellaneous Projects)
+:dart:  **Achievements And Certifications**
+:dart: **Favourites** (Movies, TV/ Web Shows, Books)
+
 
 ## Getting Started 🚀
 
@@ -129,4 +130,4 @@ If you can help us with these. Please don't hesitate to open a [pull request](ht
 - Customisable Color Scheme feature
 - Add More Sections
 
-Designed & Developed with :fa-heart: by [Rahul Jain](https://github.com/rahuldkjain "Rahul Jain")
+Designed & Developed with :heart_decoration: by [Rahul Jain](https://github.com/rahuldkjain "Rahul Jain")
