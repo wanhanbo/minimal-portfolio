@@ -53,8 +53,6 @@ Don't know what to change. Don't worry. Open the issues tab (right next to code 
   
 Now, save the file.
 
-<img align="right" width="450" src="https://raw.githubusercontent.com/firstcontributions/first-contributions/master/assets/git-status.png" alt="git status" />
-
 
 If you go to the project directory and execute the command `git status`, you'll see there are changes.
 
