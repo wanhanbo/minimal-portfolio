@@ -6,10 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "node server.js",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
-    "test": "npm run unit",
-    "build": "node build/build.js"
+    "test": "npm run unit"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
@@ -17,6 +15,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/vue-fontawesome": "^0.1.9",
+    "core-util-is": "^1.0.2",
     "epic-spinners": "^1.1.0",
     "express": "^4.17.1",
     "serve-static": "^1.14.1",
