@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "build": "vue-cli-service build",
     "test": "npm run unit"
   },
   "dependencies": {
