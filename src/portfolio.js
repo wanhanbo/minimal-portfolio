@@ -365,7 +365,7 @@ const header = {
     work: 'Work',
     awards: 'Awards',
     favourites: 'Favourites'
-}
+};
 
 
 export { home, work, favourites, awards, social, header };
