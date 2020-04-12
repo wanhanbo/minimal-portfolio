@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
-    "build": "npm run build",
+    "build": "node build/build.js",
     "test": "npm run unit"
   },
   "dependencies": {
