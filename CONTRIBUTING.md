@@ -1,5 +1,3 @@
-<img align="right" width="300" src="assets/fork.png" alt="fork this repository" />
-
 If you don't have git on your machine, [install it]( https://help.github.com/articles/set-up-git/).
 
 ## Fork this repository
@@ -49,7 +47,10 @@ git checkout -b add-macho-coder
 ## Make necessary changes and commit those changes
 
 Now open the project folder to make changes.
-Don't know what to change. Don't worry. Open the issues tab (right next to code tab) and pickup any `good first issue`. Properly understand the issue and put up a comment 'Assign this issue to me' if you to give a fix this issue.
+Don't know what to change. Don't worry. 
+Join our discord channel to discuss about the issue and its fix with the community. Invite [link](https://discord.gg/kEjzdT).
+Or open the issues tab (right next to code tab) and pickup any `good first issue`. Properly understand the issue and put up a comment 'Assign this issue to me' if you to give a fix this issue.
+
   
 Now, save the file.
 
