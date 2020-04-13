@@ -1,5 +1,5 @@
 # :muscle: Awesome Portfolio Template :sparkles:
-![](https://img.shields.io/github/license/rahuldkjain/minimal-portfolio?color=8e5dee&style=plastic) ![](https://img.shields.io/github/labels/rahuldkjain/minimal-portfolio/help%20wanted?color=%238e5dee&style=plastic) ![](https://img.shields.io/github/issues/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)   ![](https://img.shields.io/github/last-commit/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)  ![](https://img.shields.io/github/languages/code-size/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)
+![](https://img.shields.io/github/license/rahuldkjain/minimal-portfolio?color=8e5dee&style=plastic) ![](https://img.shields.io/github/labels/rahuldkjain/minimal-portfolio/help%20wanted?color=%238e5dee&style=plastic) ![](https://img.shields.io/github/issues/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)   ![](https://img.shields.io/github/last-commit/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic)  ![](https://img.shields.io/github/languages/code-size/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic) ![](https://img.shields.io/discord/699120268890865665?color=%238e5dee&style=plastic)
 
 
 #### A clean, minimal and responsive portfolio template for All!
@@ -128,7 +128,7 @@ You could also deploy it directly with Netlify by linking your own repo.
 
 ## License 📄
 
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details
+This project is licensed under the GPL-3.0 License - see the [LICENSE.md](./LICENSE) file for details
 
 
 
