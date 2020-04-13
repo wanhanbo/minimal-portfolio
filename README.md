@@ -128,7 +128,7 @@ You could also deploy it directly with Netlify by linking your own repo.
 
 ## License 📄
 
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details
+This project is licensed under the GPL-3.0 License - see the [LICENSE.md](./LICENSE) file for details
 
 
 
