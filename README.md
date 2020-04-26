@@ -8,7 +8,7 @@ Just change `src/portfolio.js` to get your personal portfolio . Feel free to use
 
 **Note**: *please read all the comments in `src/portfolio.js` carefully for hassle free customisation.*
 
-But if you want to **contribute** and make this much better for other developer have a look at [Issues](https://github.com/rahuldkjain/minimal-portfolio/issues).
+But if you want to **contribute** and make this much better for other developer have a look at [Contributing Manual](./CONTRIBUTING.md) to understand the contribution steps properly.
 
 If you created something awesome and want to contribute then feel free to open Please don't hesitate to open an [pull request](https://github.com/rahuldkjain/minimal-portfolio/pulls).
 
