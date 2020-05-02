@@ -224,7 +224,7 @@ const awards = [
 **Step 5**
 The project is using **[TMDB](https://www.themoviedb.org/?language=en-US)(The Movie Database)** API to showcase your favourite movies and tv shows. 
 
-> TMDB is free and amazing. A big thanks to all the contributors and develops out there.
+> TMDB is free and amazing. A big thanks to all the contributors and developers of TMDB out there.
 
 Please follow the steps in sequence to configure the favourites screen functionality. I know it will take a number of steps, but believe me you will love it.
 
@@ -310,6 +310,8 @@ You could also deploy it directly with Netlify or Heroku by linking your own rep
 - [SCSS](https://sass-lang.com/documentation/syntax) 
 - [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) for icons
 - [octicons](https://github.com/primer/octicons) for github icons
+- [graphql](https://graphql.org/)
+- [vue-appollo](https://github.com/vuejs/vue-apollo)
 - [epic-spinners](https://github.com/epicmaxco/epic-spinners) for spinner
 - [v-lazy-image](https://github.com/alexjoverm/v-lazy-image) for lazy loading of images
 ## License 📄
