@@ -1,0 +1,865 @@
+
+// animation: 
+// -webkit-animation: 
+// -moz-animation: 
+// -o-animation: 
+// -ms-animation: 
+
+//   @keyframes fadeIn {}
+  
+//   @-moz-keyframes fadeIn {}
+  
+//   @-webkit-keyframes fadeIn {}
+  
+//   @-o-keyframes fadeIn {}
+  
+//   @-ms-keyframes fadeIn {}
+
+@keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: $neonWhite;
+      text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight,
+      -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight,
+      0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
+    }
+    28%, 33% {
+      color: $purple;
+      text-shadow: none;
+    }
+    82%, 97% {
+      color: $purple;
+      text-shadow: none;
+    }
+  }
+  @-moz-keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: $neonWhite;
+      text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight,
+      -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight,
+      0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
+    }
+    28%, 33% {
+      color: $purple;
+      text-shadow: none;
+    }
+    82%, 97% {
+      color: $purple;
+      text-shadow: none;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: $neonWhite;
+      text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight,
+      -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight,
+      0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
+    }
+    28%, 33% {
+      color: $purple;
+      text-shadow: none;
+    }
+    82%, 97% {
+      color: $purple;
+      text-shadow: none;
+    }
+  }
+  
+  @-o-keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: $neonWhite;
+      text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight,
+      -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight,
+      0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
+    }
+    28%, 33% {
+      color: $purple;
+      text-shadow: none;
+    }
+    82%, 97% {
+      color: $purple;
+      text-shadow: none;
+    }
+  }
+  
+  @-ms-keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: $neonWhite;
+      text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight,
+      -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight,
+      0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
+    }
+    28%, 33% {
+      color: $purple;
+      text-shadow: none;
+    }
+    82%, 97% {
+      color: $purple;
+      text-shadow: none;
+    }
+  }
+
+
+@keyframes headingFadeIn {
+    0% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+  
+@-moz-keyframes headingFadeIn {
+    0% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@-webkit-keyframes headingFadeIn {
+    0% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@-o-keyframes headingFadeIn {
+    0% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@-ms-keyframes headingFadeIn {
+    0% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes shine {
+    0% {
+      color: $purple;
+      text-shadow: none;
+    }
+    100% {
+      color: $neonWhite;
+      text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight,
+      -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight,
+      0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
+    }
+  }
+  
+  @-moz-keyframes shine {
+    0% {
+        color: $purple;
+        text-shadow: none;
+      }
+      100% {
+        color: $neonWhite;
+        text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight,
+        -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight,
+        0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
+      }
+  }
+  
+  @-webkit-keyframes shine {
+    0% {
+        color: $purple;
+        text-shadow: none;
+      }
+      100% {
+        color: $neonWhite;
+        text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight,
+        -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight,
+        0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
+      }
+  }
+  
+  @-o-keyframes shine {
+    0% {
+        color: $purple;
+        text-shadow: none;
+      }
+      100% {
+        color: $neonWhite;
+        text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight,
+        -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight,
+        0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
+      }
+  }
+  
+  @-ms-keyframes shine {
+    0% {
+        color: $purple;
+        text-shadow: none;
+      }
+      100% {
+        color: $neonWhite;
+        text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight,
+        -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight,
+        0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
+      }
+  }
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: 0.9;
+    }
+  
+    6% {
+      opacity: 0.85;
+    }
+  
+    8% {
+      opacity: 0.95;
+    }
+  
+    10% {
+      opacity: 0.9;
+    }
+  
+    11% {
+      opacity: 0.922;
+    }
+  
+    12% {
+      opacity: 0.9;
+    }
+  
+    14% {
+      opacity: 0.95;
+    }
+  
+    16% {
+      opacity: 0.98;
+    }
+  
+    17% {
+      opacity: 0.9;
+    }
+  
+    19% {
+      opacity: 0.93;
+    }
+  
+    20% {
+      opacity: 0.99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: 0.94;
+    }
+  
+    28% {
+      opacity: 0.98;
+    }
+  
+    37% {
+      opacity: 0.93;
+    }
+  
+    38% {
+      opacity: 0.5;
+    }
+  
+    39% {
+      opacity: 0.96;
+    }
+  
+    42% {
+      opacity: 1;
+    }
+  
+    44% {
+      opacity: 0.97;
+    }
+  
+    46% {
+      opacity: 0.94;
+    }
+  
+    56% {
+      opacity: 0.9;
+    }
+  
+    58% {
+      opacity: 0.9;
+    }
+  
+    60% {
+      opacity: 0.99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.9;
+    }
+  
+    72% {
+      opacity: 0.95;
+    }
+  
+    93% {
+      opacity: 0.93;
+    }
+  
+    95% {
+      opacity: 0.95;
+    }
+  
+    97% {
+      opacity: 0.93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes flicker {
+    from {
+        opacity: 1;
+      }
+    
+      4% {
+        opacity: 0.9;
+      }
+    
+      6% {
+        opacity: 0.85;
+      }
+    
+      8% {
+        opacity: 0.95;
+      }
+    
+      10% {
+        opacity: 0.9;
+      }
+    
+      11% {
+        opacity: 0.922;
+      }
+    
+      12% {
+        opacity: 0.9;
+      }
+    
+      14% {
+        opacity: 0.95;
+      }
+    
+      16% {
+        opacity: 0.98;
+      }
+    
+      17% {
+        opacity: 0.9;
+      }
+    
+      19% {
+        opacity: 0.93;
+      }
+    
+      20% {
+        opacity: 0.99;
+      }
+    
+      24% {
+        opacity: 1;
+      }
+    
+      26% {
+        opacity: 0.94;
+      }
+    
+      28% {
+        opacity: 0.98;
+      }
+    
+      37% {
+        opacity: 0.93;
+      }
+    
+      38% {
+        opacity: 0.5;
+      }
+    
+      39% {
+        opacity: 0.96;
+      }
+    
+      42% {
+        opacity: 1;
+      }
+    
+      44% {
+        opacity: 0.97;
+      }
+    
+      46% {
+        opacity: 0.94;
+      }
+    
+      56% {
+        opacity: 0.9;
+      }
+    
+      58% {
+        opacity: 0.9;
+      }
+    
+      60% {
+        opacity: 0.99;
+      }
+    
+      68% {
+        opacity: 1;
+      }
+    
+      70% {
+        opacity: 0.9;
+      }
+    
+      72% {
+        opacity: 0.95;
+      }
+    
+      93% {
+        opacity: 0.93;
+      }
+    
+      95% {
+        opacity: 0.95;
+      }
+    
+      97% {
+        opacity: 0.93;
+      }
+    
+      to {
+        opacity: 1;
+      }
+  }
+  
+  @-webkit-keyframes flicker {
+    from {
+        opacity: 1;
+      }
+    
+      4% {
+        opacity: 0.9;
+      }
+    
+      6% {
+        opacity: 0.85;
+      }
+    
+      8% {
+        opacity: 0.95;
+      }
+    
+      10% {
+        opacity: 0.9;
+      }
+    
+      11% {
+        opacity: 0.922;
+      }
+    
+      12% {
+        opacity: 0.9;
+      }
+    
+      14% {
+        opacity: 0.95;
+      }
+    
+      16% {
+        opacity: 0.98;
+      }
+    
+      17% {
+        opacity: 0.9;
+      }
+    
+      19% {
+        opacity: 0.93;
+      }
+    
+      20% {
+        opacity: 0.99;
+      }
+    
+      24% {
+        opacity: 1;
+      }
+    
+      26% {
+        opacity: 0.94;
+      }
+    
+      28% {
+        opacity: 0.98;
+      }
+    
+      37% {
+        opacity: 0.93;
+      }
+    
+      38% {
+        opacity: 0.5;
+      }
+    
+      39% {
+        opacity: 0.96;
+      }
+    
+      42% {
+        opacity: 1;
+      }
+    
+      44% {
+        opacity: 0.97;
+      }
+    
+      46% {
+        opacity: 0.94;
+      }
+    
+      56% {
+        opacity: 0.9;
+      }
+    
+      58% {
+        opacity: 0.9;
+      }
+    
+      60% {
+        opacity: 0.99;
+      }
+    
+      68% {
+        opacity: 1;
+      }
+    
+      70% {
+        opacity: 0.9;
+      }
+    
+      72% {
+        opacity: 0.95;
+      }
+    
+      93% {
+        opacity: 0.93;
+      }
+    
+      95% {
+        opacity: 0.95;
+      }
+    
+      97% {
+        opacity: 0.93;
+      }
+    
+      to {
+        opacity: 1;
+      }
+  }
+  
+  @-o-keyframes flicker {
+    from {
+        opacity: 1;
+      }
+    
+      4% {
+        opacity: 0.9;
+      }
+    
+      6% {
+        opacity: 0.85;
+      }
+    
+      8% {
+        opacity: 0.95;
+      }
+    
+      10% {
+        opacity: 0.9;
+      }
+    
+      11% {
+        opacity: 0.922;
+      }
+    
+      12% {
+        opacity: 0.9;
+      }
+    
+      14% {
+        opacity: 0.95;
+      }
+    
+      16% {
+        opacity: 0.98;
+      }
+    
+      17% {
+        opacity: 0.9;
+      }
+    
+      19% {
+        opacity: 0.93;
+      }
+    
+      20% {
+        opacity: 0.99;
+      }
+    
+      24% {
+        opacity: 1;
+      }
+    
+      26% {
+        opacity: 0.94;
+      }
+    
+      28% {
+        opacity: 0.98;
+      }
+    
+      37% {
+        opacity: 0.93;
+      }
+    
+      38% {
+        opacity: 0.5;
+      }
+    
+      39% {
+        opacity: 0.96;
+      }
+    
+      42% {
+        opacity: 1;
+      }
+    
+      44% {
+        opacity: 0.97;
+      }
+    
+      46% {
+        opacity: 0.94;
+      }
+    
+      56% {
+        opacity: 0.9;
+      }
+    
+      58% {
+        opacity: 0.9;
+      }
+    
+      60% {
+        opacity: 0.99;
+      }
+    
+      68% {
+        opacity: 1;
+      }
+    
+      70% {
+        opacity: 0.9;
+      }
+    
+      72% {
+        opacity: 0.95;
+      }
+    
+      93% {
+        opacity: 0.93;
+      }
+    
+      95% {
+        opacity: 0.95;
+      }
+    
+      97% {
+        opacity: 0.93;
+      }
+    
+      to {
+        opacity: 1;
+      }
+  }
+  
+  @-ms-keyframes flicker {
+    from {
+        opacity: 1;
+      }
+    
+      4% {
+        opacity: 0.9;
+      }
+    
+      6% {
+        opacity: 0.85;
+      }
+    
+      8% {
+        opacity: 0.95;
+      }
+    
+      10% {
+        opacity: 0.9;
+      }
+    
+      11% {
+        opacity: 0.922;
+      }
+    
+      12% {
+        opacity: 0.9;
+      }
+    
+      14% {
+        opacity: 0.95;
+      }
+    
+      16% {
+        opacity: 0.98;
+      }
+    
+      17% {
+        opacity: 0.9;
+      }
+    
+      19% {
+        opacity: 0.93;
+      }
+    
+      20% {
+        opacity: 0.99;
+      }
+    
+      24% {
+        opacity: 1;
+      }
+    
+      26% {
+        opacity: 0.94;
+      }
+    
+      28% {
+        opacity: 0.98;
+      }
+    
+      37% {
+        opacity: 0.93;
+      }
+    
+      38% {
+        opacity: 0.5;
+      }
+    
+      39% {
+        opacity: 0.96;
+      }
+    
+      42% {
+        opacity: 1;
+      }
+    
+      44% {
+        opacity: 0.97;
+      }
+    
+      46% {
+        opacity: 0.94;
+      }
+    
+      56% {
+        opacity: 0.9;
+      }
+    
+      58% {
+        opacity: 0.9;
+      }
+    
+      60% {
+        opacity: 0.99;
+      }
+    
+      68% {
+        opacity: 1;
+      }
+    
+      70% {
+        opacity: 0.9;
+      }
+    
+      72% {
+        opacity: 0.95;
+      }
+    
+      93% {
+        opacity: 0.93;
+      }
+    
+      95% {
+        opacity: 0.95;
+      }
+    
+      97% {
+        opacity: 0.93;
+      }
+    
+      to {
+        opacity: 1;
+      }
+  }

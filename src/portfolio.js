@@ -1,7 +1,7 @@
 const home = {
     name: 'Rahul Jain',
     neonText: ['r', 'ahul', 'j', 'ain'],
-    // Cover Image resolution should be 
+    // Cover Image resolution should be 1000x1500 pixels
     coverImage: 'Rahul.png',
     welcomeText: 'Hi, I am ',
     skillsPrefix: 'I <i>design</i> and develop ',
@@ -15,21 +15,11 @@ const home = {
     }
 };
 const social = {
-    linkedin: {
-        link: 'https://www.linkedin.com/in/rahuldkjain/'
-    },
-    quora: {
-        link: 'https://www.quora.com/profile/Rahul-Jain-1489'
-    },
-    github: {
-        link: 'https://github.com/rahuldkjain'
-    },
-    instagram: {
-        link: 'https://instagram.com/rahul_dk_jain'
-    },
-    facebook: {
-        link: 'https://www.facebook.com/rahuljain997'
-    }
+    linkedin: 'https://www.linkedin.com/in/rahuldkjain/',
+    quora: 'https://www.quora.com/profile/Rahul-Jain-1489',
+    github: 'https://github.com/rahuldkjain',
+    instagram: 'https://instagram.com/rahul_dk_jain',
+    facebook: 'https://www.facebook.com/rahuljain997'
 };
 const work = {
     internships: {
@@ -65,52 +55,7 @@ const work = {
                 link: 'https://github.com/rahuldkjain'
             }
         },
-        data: [
-            {
-                thumb: 'ApnaAnaaj.png',
-                title: 'Apna Anaaj',
-                repo: 'rahuldkjain/Crop_Prediction',
-                about: 'Crop Price prediction app based on rainfall, MSP datasets',
-                outcome: ['ML', 'Python', 'Javascript'],
-                forkCount: '3',
-                starCount: '5',
-                language: 'Python',
-                source: 'https://github.com/rahuldkjain/Crop_Prediction'
-            },
-            {
-                thumb: 'JaanoIndia.png',
-                title: 'Jaano India Chatbot',
-                repo: 'rahuldkjain/jaano-india-chatbot',
-                about: 'AI enabled chatbot for huge Indian Statistical data',
-                outcome: ['NLP', 'Python'],
-                forkCount: '1',
-                starCount: '0',
-                language: 'Javascript',
-                source: 'https://github.com/jainsomya972/jaano-india-chatbot'
-            },
-            {
-                thumb: 'scienceAnimation.png',
-                title: 'Science Animations',
-                repo: 'rahuldkjain/Three.js-Animations',
-                about: 'User interacting animations of physics experiments to understand the depth of physics',
-                outcome: ['JavaScript', 'Three.js'],
-                forkCount: '1',
-                starCount: '1',
-                language: 'Threejs',
-                source: 'https://github.com/rahuldkjain/Three.js-Animations'
-            },
-            {
-                thumb: '',
-                title: 'Hobo',
-                repo: 'rahuldkjain/Hobo',
-                about: 'e-Commerce platform for clothing, sports and electronics',
-                outcome: ['JavaScript', 'Three.js'],
-                forkCount: '4',
-                starCount: '1',
-                language: 'Vue',
-                source: 'https://github.com/rahuldkjain/Hobo'
-            }
-        ]
+        data: []
     },
     misc_projects: {
         heading: 'Miscellaneous Projects',
@@ -152,24 +97,32 @@ const awards = [
     },
     {
         rank: '3rd',
+        product: '',
+        productLink: '',
         event: 'IBM AI/ML Hackathon',
         org: 'Abhikalpan 2018, IIITDM Jabalpur',
         certificate: 'ibm-hack-2019.png'
     },
     {
         rank: '1st',
+        product: '',
+        productLink: '',
         event: 'Short Filmmaking Competition',
         org: 'Abhikalpan 2018, IIITDM Jabalpur',
         certificate: 'short-film-making.png'
     },
     {
         rank: '1st',
+        product: '',
+        productLink: '',
         event: 'District Merit',
         org: 'CBSE Examinations, 2015',
         certificate: ''
     },
     {
         rank: '2nd',
+        product: '',
+        productLink: '',
         event: 'District Merit',
         org: 'RBSE Examinations, 2013',
         certificate: ''
@@ -180,184 +133,11 @@ const favourites = [
         kind: 'Movies',
         id: 'movies',
         heading: 'Favourite movies',
-        best: [
-            {
-                name: 'The Terminal',
-                thumb: 'theTerminalSmall.png'
-            },
-            {
-                name: 'Forrest Gump',
-                thumb: 'forrestGumpSmall.png'
-            },
-            {
-                name: 'Parasite',
-                thumb: 'parasiteSmall.png'
-            },
-            {
-                name: 'Zindagi Na Milegi Dobara',
-                thumb: 'znmdSmall.png'
-            },
-        ],
-        list: [
-            {
-                name: 'The Terminal',
-                thumb: 'theTerminal.png'
-            },
-            {
-                name: 'Parasite',
-                thumb: 'parasite.png'
-            },
-            {
-                name: 'Zindagi Na Milegi Dobara',
-                thumb: 'znmd.png'
-            },
-            {
-                name: 'Yes Man',
-                thumb: 'yesMan.png'
-            },
-            {
-                name: 'Lucy',
-                thumb: 'lucy.png'
-            },
-            {
-                name: 'Chhichhore',
-                thumb: 'chhichhore.png'
-            },
-            {
-                name: 'Forrest Gump',
-                thumb: 'forrestGump.png'
-            },
-            {
-                name: 'Dil Chahta Hai',
-                thumb: 'dilChahtaHai.png'
-            },
-            {
-                name: 'Wedding Crashers',
-                thumb: 'weddingCrashers.png'
-            },
-            {
-                name: 'PK',
-                thumb: 'pk.png'
-            }
-        ]
     },
     {
         kind: 'Tvs',
         id: 'tv',
         heading: 'Favourites TV/Web Shows',
-        best: [
-            {
-                name: 'Money Heist',
-                thumb: 'moneyHeistSmall.png'
-            },
-            {
-                name: 'Friends',
-                thumb: 'friendsSmall.png'
-            },
-            {
-                name: 'Silicon Valley',
-                thumb: 'siliconValleySmall.png'
-            },
-            {
-                name: 'TVF Pitchers',
-                thumb: 'pitchersSmall.png'
-            },
-        ],
-        list: [
-            {
-                name: '13 Reasons Why',
-                thumb: '13reasons.png'
-            },
-            {
-                name: 'The Big Bang Theory',
-                thumb: 'bbt.png'
-            },
-            {
-                name: 'TVF Cubicles',
-                thumb: 'cubicles.png'
-            },
-            {
-                name: 'Flames',
-                thumb: 'flames.png'
-            },
-            {
-                name: 'Friends',
-                thumb: 'friends.png'
-            },
-            {
-                name: "I'm Mature",
-                thumb: 'immature.png'
-            },
-            {
-                name: 'Kota Factory',
-                thumb: 'kotaFactory.png'
-            },
-            {
-                name: 'Money Heist',
-                thumb: 'moneyHeist.png'
-            },
-            {
-                name: 'Operation MBBS',
-                thumb: 'opMBBS.png'
-            },
-            {
-                name: 'TVF Pitchers',
-                thumb: 'pitchers.png'
-            },
-            {
-                name: 'Silicon Valley',
-                thumb: 'silicon.png'
-            },
-            {
-                name: 'TVF Tripling',
-                thumb: 'tripling.png'
-            }
-        ]
-    },
-    {
-        kind: 'Books',
-        id: 'books',
-        heading: 'Favourites Books',
-        best: [
-            {
-                name: 'Shoe Dog: Phil Knight',
-                thumb: 'shoeDogSmall.png'
-            },
-            {
-                name: 'Crushing It: Gary Vaynerchuk',
-                thumb: 'crushingItSmall.png'
-            },
-            {
-                name: 'Rich Dad Poor Dad: Robert Kiyosaki',
-                thumb: 'richDadPoorDadSmall.png'
-            },
-            {
-                name: 'One Day In December',
-                thumb: 'oneDayInDecemberSmall.png'
-            }
-        ],
-        list: [
-            {
-                name: 'Shoe Dog: Phil Knight',
-                thumb: 'shoeDog.png'
-            },
-            {
-                name: 'Crushing It: Gary Vaynerchuk',
-                thumb: 'crushingIt.png'
-            },
-            {
-                name: 'Think & Grow Rich: Napoleon Hill',
-                thumb: 'thinkAndGrowRich.png'
-            },
-            {
-                name: 'Rich Dad Poor Dad: Robert Kiyosaki',
-                thumb: 'richDadPoorDad.png'
-            },
-            {
-                name: 'One Day In December',
-                thumb: 'oneDayInDecember.png'
-            }
-        ]
     }
 ];
 const header = {
@@ -367,5 +147,37 @@ const header = {
     favourites: 'Favourites'
 };
 
+const TMDB = {
+  TMDB_ACCOUNT_ID: 'OTI3NzfdfdsddsffAxMw==',
+  TMDB_API_KEY: 'I3sdfsdfsdfsdNjRlMGRjYTJiNTM4ZTQzNzBjNDc3Zjc=',
+  TMDB_SESSION_ID: 'WZlNGsfdsfsdfNmMDJjNGNiNmQ2N2I5MTFhZGVmZjI5NzQ3OTYzMw=='
+}
 
-export { home, work, favourites, awards, social, header };
+const genres = {
+  '28': 'Action',
+  '12': "Adventure",
+  '16': "Animation",
+  '35': "Comedy",
+  '80': "Crime",
+  '99': "Documentary",
+  '18': "Drama",
+  '10751': "Family",
+  '14': "Fantasy",
+  '36': "History",
+  '27': "Horror",
+  '10402': "Music",
+  '9648': "Mystery",
+  '10749': "Romance",
+  '878': "Science Fiction",
+  '10770': "TV Movie",
+  '53': "Thriller",
+  '10752': "War",
+  '37': "Western"
+}
+
+const github = {
+    username: 'rahuldkjain',
+    auth_token: 'sdfsdfTU1ZDFjNDZlYmQ5MzQ5ODIzMWFjMWI4OGZUYGDjkf'
+}
+
+export { home, work, favourites, awards, social, header, TMDB, github };

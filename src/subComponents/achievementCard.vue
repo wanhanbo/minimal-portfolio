@@ -1,10 +1,12 @@
 <template>
     <div class="box">
-        <img :src="getImage(achievement.certificate)" alt="" v-if="achievement.certificate">
+        <v-lazy-image :src="getImage(achievement.certificate)" v-if="achievement.certificate" />
         <i class="fas fa-medal medal" v-if="!achievement.certificate"></i>
-        <div class="rank">{{achievement.rank}}</div>
-        <div class="event">{{achievement.event}}</div>
-        <div class="org">{{achievement.org}}</div>
+        <div>
+            <div class="rank">{{achievement.rank}}</div>
+            <div class="event">{{achievement.event}}</div>
+            <div class="org">{{achievement.org}}</div>
+        </div>
     </div>
 </template>
 <script>
@@ -42,7 +44,7 @@ export default {
         width: 520px;
         text-align: center;
         font-size: 10em;
-        padding: 10% 0% 25% 0%;
+        padding: 40px 0px 60px 0px;
         position: relative;
         right: 13%;
     }
@@ -55,7 +57,7 @@ export default {
     }
     .event {
         font-size: 1.1em;
-        color: $gray;
+        color: $black;
     }
     .org {
         font-size: 0.8em;

@@ -14,7 +14,7 @@ ul {
         }
         .seeAll {
             text-align: right;
-            font-size: 0.8em;
+            font-size: 1em;
             color: grey;
             cursor: pointer;
             align-self: center;
@@ -22,8 +22,8 @@ ul {
     }
     .content {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 3%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 12%;
         margin: 2% 0%;
         @media only screen and (max-device-width: 1199px) {
             overflow: scroll;
@@ -31,67 +31,12 @@ ul {
         .card {
             width: 100%;
             border-radius: 4px;
-            height: 120px;
-            .image {}
-        }
-    }
-}
-
-.fav_list {
-    margin: 3% 5% 2% 5%;
-    display: none;
-    .heading_list {
-        display: grid;
-        // grid-template-columns: repeat(2, 1fr);
-        .title_list {
-            font-size: 2em;
-            text-align: center;
-            font-weight: 600;
-            // justify-self: left;
-            @media only screen and (max-device-width: 1199px) {
-                font-size: 1.3em;
+            background: white;
+            padding-top: 1%;
+            .title {
                 text-align: center;
-                width: 100%;
-                margin: 2% 2% 10% 2%;
-            }
-        }
-        .filter_list {
-            justify-self: right;
-        }
-    }
-    .content_list {
-        display: grid;
-        @media only screen and (min-device-width: 1200px) {
-            grid-template-columns: repeat(4, 1fr);
-            grid-column-gap: 5%;
-            grid-row-gap: 5%;
-            margin: 2%;
-        }
-        .card_list {
-            border-radius: 1px;
-            height: 40vh;
-            @media only screen and (max-device-width: 1199px) {
-                margin: 10% 5%;
-                overflow: scroll;
-                height: 65vh;
-            }
-            .strip_list {
-                width: 60%;
-                height: 10px;
-                background: brown;
-                position: relative;
-                top: 60%;
-                right: 10%;
-            }
-            .title_list {
-                position: relative;
-                top: 60%;
-                right: 47%;
-                display: grid;
-                justify-items: end;
-                align-items: end;
-                text-align: left;
-                font-size: 1.3em;
+                color: black;
+                font-size: 20px;
             }
         }
     }

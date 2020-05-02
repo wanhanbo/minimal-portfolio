@@ -2,19 +2,19 @@
     <div class="icons">
         <ul>
             <li>
-                <a :href="socialDetails.linkedin.link" target="blank"><i class="fab fa-linkedin"></i></a>
+                <a :href="socialDetails.linkedin" target="blank"><i class="fab fa-linkedin"></i></a>
             </li>
             <li>
-                <a :href="socialDetails.github.link" target="blank"><i class="fab fa-github"></i></a>
+                <a :href="socialDetails.github" target="blank"><i class="fab fa-github"></i></a>
             </li>
             <li>
-                <a :href="socialDetails.quora.link" target="blank"><i class="fab fa-quora"></i></a>
+                <a :href="socialDetails.quora" target="blank"><i class="fab fa-quora"></i></a>
             </li>
             <li>
-                <a :href="socialDetails.instagram.link" target="blank"><i class="fab fa-instagram"></i></a>
+                <a :href="socialDetails.instagram" target="blank"><i class="fab fa-instagram"></i></a>
             </li>
             <li>
-                <a :href="socialDetails.facebook.link" target="blank"><i class="fab fa-facebook"></i></a>
+                <a :href="socialDetails.facebook" target="blank"><i class="fab fa-facebook"></i></a>
             </li>
         </ul>
     </div>

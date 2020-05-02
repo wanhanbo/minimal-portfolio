@@ -1,420 +1,250 @@
+
+
 #loader {
-  position: fixed;
-  top: 50%;
-  left: 50%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
 }
+
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
+
 .container {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: 40% 50% 10%;
-  justify-items: start;
-  align-items: start;
-  padding: 0;
-  #container__cover {
-      width: 100%;
-      .coverImage {
-          width: 68%;
-          background: transparent;  
-          filter: contrast(2) brightness(1);
-      }
-  }
-  #container__about {
-      text-align: left;
-      align-self: center;
-      .intro {
-          list-style-type: none;
-          li {
-              display: block;
-          }
-          #main {
-              .title {
-                  display: inline;
-                  font-family: 'Clip';
-                  .hi {
-                      font-size: 3em;
-                      animation: hi 1s forwards;
-                      animation-delay: 0.7s;
-                      visibility: hidden;
-                      opacity: 0;
-                  }
-                  .sign {
-                      font-size: 3em;
-                      letter-spacing: 2;
-                      text-transform: uppercase;
-                      color: $neonWhite;
-                      text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight,
-                          -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight,
-                          0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
-                      animation: shine 2s forwards, flicker 3s infinite;
-                      -webkit-animation: headingFadeIn 1s forwards;
-                      -o-animation: headingFadeIn 1s forwards;
-                      animation: headingFadeIn 1s forwards;
-                      animation-delay: 1s;
-                      visibility: hidden;
-                      .flicker {
-                          background: transparent;
-                          animation: shine 2s forwards, blink 3s 2s infinite;
-                      }  
-                      .fast-flicker {
-                          background: transparent;
-                          animation: shine 2s forwards, blink 10s 1s infinite;
-                      }
-                  }
-              }
-              .block {
-                  height: 8vh;
-                  width: 45%;
-                  background: $purple;
-                  position: absolute;
-                  top: 32%;
-                  animation: mainBlock 1s cubic-bezier(.74, .06, .4, .92) forwards;
-              }
-          }
-
-          #skills {
-              -webkit-animation: headingFadeIn 1s forwards;
-              -o-animation: headingFadeIn 1s forwards;
-              animation: headingFadeIn 1s forwards;
-              animation-delay: 1.5s;
-              visibility: hidden;
-              display: inline-flex;
-              padding: 2% 0%;
-              .bioText {
-                  font-size: 2em;
-                  letter-spacing: 3;
-              }
-              .wordSwipe {
-                  font-size: 2em;
-                  color: $purple;
-                  overflow: hidden;
-                  position: relative;
-                  float: left;
-                  right: 5%;
-                  height: 40px;
-                  padding-top: 10px;
-                  margin-top: -10px;
-                  li {
-                      font-weight: 550;
-                      height: 45px;
-                      padding: 0;
-                      margin-bottom: 45px;
-                      display: block;
-                  }
-                  .flip4 {
-                      animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-                  }
-              }
-          }
-          #description {
-              -webkit-animation: headingFadeIn 1s forwards;
-              -o-animation: headingFadeIn 1s forwards;
-              animation: headingFadeIn 1s forwards;
-              animation-delay: 1.5s;
-              visibility: hidden;
-              .guide {
-                  font-size: 16px;
-                  padding-bottom: 2%;
-              }
-          }
-          #resume {
-              -webkit-animation: headingFadeIn 1s forwards;
-              -o-animation: headingFadeIn 1s forwards;
-              animation: headingFadeIn 1s forwards;
-              animation-delay: 2.5s;
-              visibility: hidden;
-              display: flex;
-              justify-content: center;
-              margin-top: 5%;
-          }
-      }
-  }
-  #container__social {
-      align-self: center;
-      justify-self: center;
-  }
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 40% 50% 10%;
+	justify-items: start;
+	align-items: start;
+	padding: 0;
+	#container__cover {
+		width: 100%;
+		.coverImage {
+			width: 68%;
+			background: transparent;
+			filter: contrast(2) brightness(1);
+		}
+	}
+	#container__about {
+		text-align: left;
+		align-self: center;
+		.intro {
+			list-style-type: none;
+			li {
+				display: block;
+			}
+			#main {
+				.title {
+					display: inline;
+					font-family: 'Clip';
+					.hi {
+						font-size: 3em;
+						animation: headingFadeIn 1s forwards 0.7s;
+						-webkit-animation: headingFadeIn 1s forwards 0.7s;
+						-moz-animation: headingFadeIn 1s forwards 0.7s;
+						-o-animation: headingFadeIn 1s forwards 0.7s;
+						-ms-animation: headingFadeIn 1s forwards 0.7s;
+						visibility: hidden;
+						opacity: 0;
+					}
+					.sign {
+						font-size: 3em;
+						letter-spacing: 2;
+						text-transform: uppercase;
+						color: $neonWhite;
+						text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight, -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight, 0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
+						animation: shine 2s forwards, flicker 3s infinite;
+						-webkit-animation: shine 2s forwards, flicker 3s infinite;
+						-moz-animation: shine 2s forwards, flicker 3s infinite;
+						-o-animation: shine 2s forwards, flicker 3s infinite;
+						-ms-animation: shine 2s forwards, flicker 3s infinite;
+						animation: headingFadeIn 1s forwards 1s;
+						-webkit-animation: headingFadeIn 1s forwards 1s;
+						-moz-animation: headingFadeIn 1s forwards 1s;
+						-o-animation: headingFadeIn 1s forwards 1s;
+						-ms-animation: headingFadeIn 1s forwards 1s;
+						visibility: hidden;
+						.flicker {
+							background: transparent;
+							animation: shine 2s forwards, blink 3s 2s infinite;
+							-webkit-animation: shine 2s forwards, blink 3s 2s infinite;
+							-moz-animation: shine 2s forwards, blink 3s 2s infinite;
+							-o-animation: shine 2s forwards, blink 3s 2s infinite;
+							-ms-animation: shine 2s forwards, blink 3s 2s infinite;
+						}
+						.fast-flicker {
+							background: transparent;
+							animation: shine 2s forwards, blink 10s 1s infinite;
+							-webkit-animation: shine 2s forwards, blink 10s 1s infinite;
+							-moz-animation: shine 2s forwards, blink 10s 1s infinite;
+							-o-animation: shine 2s forwards, blink 10s 1s infinite;
+							-ms-animation: shine 2s forwards, blink 10s 1s infinite;
+						}
+					}
+				}
+				.block {
+					height: 8vh;
+					width: 45%;
+					background: $purple;
+					position: absolute;
+					top: 30%;
+					animation: mainBlock 1s cubic-bezier(.74, .06, .4, .92) forwards;
+					-webkit-animation: mainBlock 1s cubic-bezier(.74, .06, .4, .92) forwards;
+					-moz-animation: mainBlock 1s cubic-bezier(.74, .06, .4, .92) forwards;
+					-o-animation: mainBlock 1s cubic-bezier(.74, .06, .4, .92) forwards;
+					-ms-animation: mainBlock 1s cubic-bezier(.74, .06, .4, .92) forwards;
+				}
+			}
+			#skills {
+				animation: headingFadeIn 1s forwards 1.5s;
+				-webkit-animation: headingFadeIn 1s forwards 1.5s;
+				-moz-animation: headingFadeIn 1s forwards 1.5s;
+				-o-animation: headingFadeIn 1s forwards 1.5s;
+				-ms-animation: headingFadeIn 1s forwards 1.5s;
+				visibility: hidden;
+				display: inline-flex;
+				padding: 2% 0%;
+				.bioText {
+					font-size: 2em;
+					letter-spacing: 3;
+				}
+				.wordSwipe {
+					font-size: 2em;
+					color: $purple;
+					overflow: hidden;
+					position: relative;
+					float: left;
+					right: 5%;
+					height: 40px;
+					padding-top: 10px;
+					margin-top: -10px;
+					li {
+						font-weight: 550;
+						height: 45px;
+						padding: 0;
+						margin-bottom: 45px;
+						display: block;
+					}
+					.flip4 {
+						animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+						-webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+						-moz-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+						-o-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+						-ms-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+					}
+				}
+			}
+			#description {
+				animation: headingFadeIn 1s forwards 1.5s;
+				-webkit-animation: headingFadeIn 1s forwards 1.5s;
+				-moz-animation: headingFadeIn 1s forwards 1.5s;
+				-o-animation: headingFadeIn 1s forwards 1.5s;
+				-ms-animation: headingFadeIn 1s forwards 1.5s;
+				visibility: hidden;
+				.guide {
+					font-size: 16px;
+					padding-bottom: 2%;
+				}
+			}
+			#resume {
+				animation: headingFadeIn 1s forwards 2s;
+				-webkit-animation: headingFadeIn 1s forwards 2s;
+				-moz-animation: headingFadeIn 1s forwards 2s;
+				-o-animation: headingFadeIn 1s forwards 2s;
+				-ms-animation: headingFadeIn 1s forwards 2s;
+				visibility: hidden;
+				display: flex;
+				justify-content: center;
+				margin-top: 5%;
+			}
+			#githubButtons {
+				visibility: hidden;
+				display: flex;
+				justify-content: center;
+				margin-top: 5%;
+				animation: headingFadeIn 1s forwards 2s;
+				-webkit-animation: headingFadeIn 1s forwards 2s;
+				-moz-animation: headingFadeIn 1s forwards 2s;
+				-o-animation: headingFadeIn 1s forwards 2s;
+				-ms-animation: headingFadeIn 1s forwards 2s;
+			}
+		}
+	}
+	#container__social {
+		align-self: center;
+		justify-self: center;
+	}
 }
 
-@media only screen and (max-device-width: 1199px){
-  .container {
-      display: contents;
-      #container__cover {
-          .coverImage {
-              width: 64%;
-          }
-      }
-      #container__about {
-          text-align: center;
-          .intro {
-              width: 80%;
-              padding: 0 10%;
-              li {
-                  display: block;
-                  padding-top: 4%;
-              }
-              #main {
-                  .title {
-                      .hi {
-                          font-size: 2em;
-                      }
-                      .sign {
-                          font-size: 2em;
-                      }
-                  }
-                  .block {
-                      visibility: hidden;
-                  }
-              }
-
-              #skills {
-                  padding: 2% 0%;
-                  text-align: center;
-                  .bioText {
-                      font-size: 1em;
-                  }
-                  .wordSwipe {
-                      font-size: 1em;
-                      right: 10%;
-                  }
-              }
-              #description {
-                  padding-top: 0;
-                  .guide {
-                      text-align: left;
-                      font-size: 14px;
-                  }
-              }
-          }
-      }
-  }
+@media only screen and (max-device-width: 1199px) {
+	.container {
+		display: contents;
+		#container__cover {
+			.coverImage {
+				width: 64%;
+			}
+		}
+		#container__about {
+			text-align: center;
+			.intro {
+				width: 80%;
+				padding: 0 10%;
+				li {
+					display: block;
+					padding-top: 4%;
+				}
+				#main {
+					.title {
+						.hi {
+							font-size: 2em;
+						}
+						.sign {
+							font-size: 2em;
+						}
+					}
+					.block {
+						visibility: hidden;
+					}
+				}
+				#skills {
+					padding: 2% 0%;
+					text-align: center;
+					.bioText {
+						font-size: 1em;
+					}
+					.wordSwipe {
+						font-size: 1em;
+						right: 10%;
+					}
+				}
+				#description {
+					padding-top: 0;
+					.guide {
+						text-align: left;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
 }
+
 @media only screen and (max-device-width: 362px) {
-.container {
-      #container__about {
-          .intro {
-              #skills {
-                  .bioText {
-                      font-size: 14px;
-                  }
-                  .wordSwipe {
-                      font-size: 14px;
-                      right: 13%;
-                  }
-              }
-          }
-      }
-  }
+	.container {
+		#container__about {
+			.intro {
+				#skills {
+					.bioText {
+						font-size: 14px;
+					}
+					.wordSwipe {
+						font-size: 14px;
+						right: 13%;
+					}
+				}
+			}
+		}
+	}
 }
 
-
-
-@keyframes flip4 {
-0% { margin-top: -360px; }
-5% { margin-top: -270px; }
-25% { margin-top: -270px; }
-30% { margin-top: -180px; }
-50% { margin-top: -180px; }
-55% { margin-top: -90px; }
-75% { margin-top: -90px; }
-80% { margin-top: 0px; }
-99.99% { margin-top: 0px; }
-100% { margin-top: -270px; }
-}
-
-@keyframes blink {
-  0%,
-  22%,
-  36%,
-  75% {
-    color: $neonWhite;
-    text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight,
-    -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight,
-    0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
-  }
-  28%, 33% {
-    color: $purple;
-    text-shadow: none;
-  }
-  82%, 97% {
-    color: $purple;
-    text-shadow: none;
-  }
-}
-@keyframes shine {
-  0% {
-    color: $purple;
-    text-shadow: none;
-  }
-  100% {
-    color: $neonWhite;
-    text-shadow: 0 0 0.6rem $neonWhite, 0 0 1.5rem $purpleXLight,
-    -0.2rem 0.1rem 1rem $purpleXLight, 0.2rem 0.1rem 1rem $purpleXLight,
-    0 -0.5rem 2rem $purple, 0 0.5rem 3rem $purple;
-  }
-}
-
-@keyframes flicker {
-  from {
-    opacity: 1;
-  }
-
-  4% {
-    opacity: 0.9;
-  }
-
-  6% {
-    opacity: 0.85;
-  }
-
-  8% {
-    opacity: 0.95;
-  }
-
-  10% {
-    opacity: 0.9;
-  }
-
-  11% {
-    opacity: 0.922;
-  }
-
-  12% {
-    opacity: 0.9;
-  }
-
-  14% {
-    opacity: 0.95;
-  }
-
-  16% {
-    opacity: 0.98;
-  }
-
-  17% {
-    opacity: 0.9;
-  }
-
-  19% {
-    opacity: 0.93;
-  }
-
-  20% {
-    opacity: 0.99;
-  }
-
-  24% {
-    opacity: 1;
-  }
-
-  26% {
-    opacity: 0.94;
-  }
-
-  28% {
-    opacity: 0.98;
-  }
-
-  37% {
-    opacity: 0.93;
-  }
-
-  38% {
-    opacity: 0.5;
-  }
-
-  39% {
-    opacity: 0.96;
-  }
-
-  42% {
-    opacity: 1;
-  }
-
-  44% {
-    opacity: 0.97;
-  }
-
-  46% {
-    opacity: 0.94;
-  }
-
-  56% {
-    opacity: 0.9;
-  }
-
-  58% {
-    opacity: 0.9;
-  }
-
-  60% {
-    opacity: 0.99;
-  }
-
-  68% {
-    opacity: 1;
-  }
-
-  70% {
-    opacity: 0.9;
-  }
-
-  72% {
-    opacity: 0.95;
-  }
-
-  93% {
-    opacity: 0.93;
-  }
-
-  95% {
-    opacity: 0.95;
-  }
-
-  97% {
-    opacity: 0.93;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-@keyframes mainBlock {
-0% {
-  width: 0%;
-  left: 30%;
-
-}
-50% {
-  width: 45%;
-  left: 30%;
-
-}
-100% {
-  width: 0;
-  left: 75%;
-}
-}
-
-@keyframes headingFadeIn {
-0% {
-  opacity: 0;
-  visibility: visible;
-}
-100% {
-  opacity: 1;
-  visibility: visible;
-}
-}
-@keyframes hi {
-  from {
-    opacity: 0;
-    visibility: visible;
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-  }
-}

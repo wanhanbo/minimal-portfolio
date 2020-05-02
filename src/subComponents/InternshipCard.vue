@@ -1,7 +1,7 @@
 <template>
     <div class="cardContainer">
         <div :class="{cover: true}">
-            <img class="certi" :src="getImage(details.thumb)" alt="">
+            <v-lazy-image class="certi" :src="getImage(details.thumb)" />
         </div>
         <div :class="{box: true}">
             <div class="title">
@@ -34,11 +34,6 @@ export default {
         getImage (path) {
             return require('../assets/images/certificates/' + path);
         },
-    },
-    computed: {
-        isMobile () {
-            return (((window.innerWidth > 0) ? window.innerWidth : screen.width) < 1200) ? true : false;
-        }
     }
 }
 </script>

@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="fade-in">
     <div class="firefly" v-for="i in 15" :key="i"></div>
     <ul class="container">
       <li id="container__cover">
-        <img :src="getImage(content.coverImage)" class="coverImage">
+        <v-lazy-image :src="getImage(content.coverImage)" class="coverImage" />
       </li>
       <li id="container__about">
         <ul class="intro">
@@ -45,4 +45,7 @@
   @import '../../assets/css/design.scss';
   @import '../../assets/css/firefly.scss';
   @import './home.scss';
+  @import '../../assets/css/animations/neonText.scss';
+  @import '../../assets/css/animations/wordSwipe.scss';
+  @import '../../assets/css/animations/barBlock.scss';
 </style>
