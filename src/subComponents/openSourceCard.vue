@@ -1,16 +1,27 @@
 <template>
     <div class="cardContainer">
-        <a :href="project.source" target="blank"><div class="repo">{{project.repo}}</div></a>
-        <div class="description">{{project.about}}</div>
-        <span class="language"><i class="fas fa-circle"></i> {{project.language}}</span>
-        &emsp;
-        <span>
-            <i class="fas fa-code-branch"></i>{{project.forkCount}}
-            <i class="fas fa-star"></i>{{project.starCount}}
-        </span>
+        <a :href="project.projectLink" target="blank">
+            <span class="projectTitle">
+                <img src="../assets/icons/repo.svg" />
+                <a :href="project.source" target="blank"><div class="repo">{{user}}/{{project.projectName}}</div></a>
+            </span>
+            <div class="description">{{project.projectDescription}}</div>
+            <div class="metaProject">
+                <div class="language" :style="{'color': project.language.color + '!important'}">
+                    <i class="fas fa-circle"></i> 
+                    <span style="color: black">{{project.language.name}}</span>
+                </div>
+                &emsp;
+                <div class="counts">
+                    <img src="../assets/icons/repo-forked.svg" />{{project.forkCount}}
+                    <img src="../assets/icons/star.svg" />{{project.starCount}}
+                </div>
+            </div>
+        </a>
     </div>
 </template>
 <script>
+import { github } from '../portfolio.js';
 export default {
     name: 'OpenSourceCard',
     props: {
@@ -19,10 +30,11 @@ export default {
     components: {},
     data () {
         return {
-            
+            user: ''
         }
     },
     created () {
+        this.user = github.username;
     },
     methods: {
         getImage (path) {
@@ -43,25 +55,51 @@ export default {
     width: 400px;
     background: white;
     color: black;
-    padding: 2%;
-    margin: 4% 0%;
-    border-radius: 1px;
-    -webkit-box-shadow: 1px 0px 6px 2px rgba(187,192,196,0.75);
-    -moz-box-shadow: 1px 0px 6px 2px rgba(187,192,196,0.75);
-    box-shadow: 1px 0px 6px 2px rgba(187,192,196,0.75);
-    .repo {
-        font-size: 1.2em;
-        font-weight: 600;
-    }
-    .language {
-        svg {
-            font-size: 10px;
-            color: yellow;
+    padding: 5%;
+    margin: 10% 0%;
+    border-radius: 4px;
+    cursor: pointer;
+    .projectTitle {
+        display: inline-flex;
+        width: 100%;
+        .repo {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-left: 5%;
+            width: 100%;
         }
     }
     .description {
         font-size: 0.9em;
         color: $gray;
+        font-size: 0.9em;
+        line-height: 1.3em;
+        max-height: 4em;
+        overflow: hidden;
+    }
+    .metaProject {
+        display: inline-flex;
+        width: 100%;
+        margin-top: 2%;
+        .language {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            svg {
+                font-size: 10px;
+                margin-right: 2%;
+            }
+        }
+        .counts {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            padding-right: 2%;
+            img {
+                padding: 0 2%;
+            }
+        }
     }
     svg {
         margin: 0 2%;
@@ -70,14 +108,18 @@ export default {
 @media only screen and (max-device-width: 1199px){
     .cardContainer {
         width: 300px;
-        .repo {
-            font-size: 1em;
-            font-weight: 600;
+        .projectTitle {
+            .repo {
+                font-size: 1em;
+                font-weight: 600;
+            }
         }
-        .language {
-            font-size: 10px;
-            svg {
-                font-size: 0.5em;
+        .metaProject {
+            .language {
+                font-size: 10px;
+                svg {
+                    font-size: 0.5em;
+                }
             }
         }
         .description {

@@ -1,0 +1,77 @@
+
+
+@keyframes mainBlock {
+	0% {
+		width: 0%;
+		left: 30%;
+	}
+	50% {
+		width: 45%;
+		left: 30%;
+	}
+	100% {
+		width: 0;
+		left: 75%;
+	}
+}
+
+@-moz-keyframes mainBlock {
+	0% {
+		width: 0%;
+		left: 30%;
+	}
+	50% {
+		width: 45%;
+		left: 30%;
+	}
+	100% {
+		width: 0;
+		left: 75%;
+	}
+}
+
+@-webkit-keyframes mainBlock {
+	0% {
+		width: 0%;
+		left: 30%;
+	}
+	50% {
+		width: 45%;
+		left: 30%;
+	}
+	100% {
+		width: 0;
+		left: 75%;
+	}
+}
+
+@-o-keyframes mainBlock {
+	0% {
+		width: 0%;
+		left: 30%;
+	}
+	50% {
+		width: 45%;
+		left: 30%;
+	}
+	100% {
+		width: 0;
+		left: 75%;
+	}
+}
+
+@-ms-keyframes mainBlock {
+	0% {
+		width: 0%;
+		left: 30%;
+	}
+	50% {
+		width: 45%;
+		left: 30%;
+	}
+	100% {
+		width: 0;
+		left: 75%;
+	}
+}
+

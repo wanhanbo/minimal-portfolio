@@ -1,5 +1,5 @@
 <template>
-    <div>
+<div class="fade-in">
         <div class="firefly" v-for="i in 15" :key="i"></div>
         <div :v-if="display(content.internships.data)">
             <div class="heading">{{ content.internships.heading }}</div>
@@ -9,12 +9,10 @@
                 </li>
             </ul>
         </div>
-        <div :v-if="display(content.projects.data)">
+        <div :v-if="display(githubProjects)">
             <div class="heading">{{content.projects.heading}}</div>
             <div class="open-source">
-                <div v-for="(project, index) in content.projects.data" :key="index">
-                    <OpenSourceCard :project="project"/>
-                </div>
+                <OpenSourceCard :project="project" v-for="(project, index) in githubProjects" :key="index" />
             </div>
             <BuzzerButton :link="content.projects.buttons.showMore.link" 
             target="blank" :placeholder="content.projects.buttons.showMore.placeholder"/>
@@ -28,6 +26,10 @@
                 </div>
             </div>
         </div>
+        <iframe width="350" height="420" class="xdAnimation"
+        src="https://xd.adobe.com/embed/3d8bc126-770d-466a-43a3-8b5d6a54acef-4bba/?fullscreen" frameborder="0">
+        </iframe>
+        <div>Doordarshan and Chill Animation</div>
     </div>
 </template>
 <script src="./work.js"></script>

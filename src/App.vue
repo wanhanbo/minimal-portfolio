@@ -48,12 +48,11 @@ export default {
     font-family: 'Audiowide';
     src: url('./assets/fonts/Audiowide-Regular.ttf') format('truetype');
 }
+@import './assets/css/animations/fadeIn.scss';
 html, body {
   font-family: 'Poppins', sans-serif;
 }
 #app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
   position: fixed;
@@ -63,6 +62,7 @@ html, body {
   width: 100%;
   background: black;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 
 #loader {
@@ -75,5 +75,14 @@ html, body {
     top: 45%;
     left: 45%;
   }
+}
+
+.v-lazy-image {
+  filter: blur(10px);
+  transition: filter 0.7s;
+}
+
+.v-lazy-image-loaded {
+  filter: blur(0px);
 }
 </style>

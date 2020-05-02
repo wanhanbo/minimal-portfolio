@@ -1,5 +1,3 @@
-### :v: Let's contribute to make portfolio more awesome [![](https://img.shields.io/discord/699120268890865665?color=%238e5dee&style=plastic)](https://discord.gg/kEjzdT)
-
 If you don't have git on your machine, [install it]( https://help.github.com/articles/set-up-git/).
 
 ## Fork this repository
@@ -48,10 +46,9 @@ git checkout -b add-macho-coder
 
 ## Make necessary changes and commit those changes
 
-Now open the project folder to make changes. Don't know what to change. Don't worry. 
-  
+Now open the project folder to make changes.
+Don't know what to change. Don't worry. 
 Join our discord channel to discuss about the issue and its fix with the community. Invite [link](https://discord.gg/kEjzdT).
-  
 Or open the issues tab (right next to code tab) and pickup any `good first issue`. Properly understand the issue and put up a comment 'Assign this issue to me' if you to give a fix this issue.
 
   
@@ -85,7 +82,11 @@ replacing `<add-your-branch-name>` with the name of the branch you created earli
 
 If you go to your repository on GitHub, you'll see a  `Compare & pull request` button. Click on that button.
 
+<img style="float: right;" src="https://raw.githubusercontent.com/firstcontributions/first-contributions/master/assets/compare-and-pull.png" alt="create a pull request" />
+
 Now submit the pull request.
+
+<img style="float: right;" src="https://raw.githubusercontent.com/firstcontributions/first-contributions/master/assets/submit-pull-request.png" alt="submit pull request" />
 
 Soon I'll be merging all your changes into the master branch of this project. You will get a notification email once the changes have been merged.
 

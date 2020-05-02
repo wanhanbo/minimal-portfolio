@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="fade-in">
         <div class="firefly" v-for="i in 15" :key="i"></div>
         <div class="container">
             <div class="card" v-for="(achievement, index) in content" :key="index">

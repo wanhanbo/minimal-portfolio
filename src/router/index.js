@@ -20,12 +20,12 @@ const router = new Router({
       }
     },
     {
-      path: '/test',
+      path: '/#test',
       name: 'Test',
       component: Test
     },
     {
-      path: '/work',
+      path: '/#work',
       name: 'Work',
       component: Work,
       meta: {
@@ -33,7 +33,7 @@ const router = new Router({
       }
     },
     {
-      path: '/awards',
+      path: '/#awards',
       name: 'Awards',
       component: Awards,
       meta: {
@@ -41,7 +41,7 @@ const router = new Router({
       }
     },
     {
-      path: '/favourites',
+      path: '/#favourites',
       name: 'Favourites',
       component: Favourites,
       meta: {
@@ -49,7 +49,7 @@ const router = new Router({
       }
     },
     {
-      path: '/favourites/:kind',
+      path: '/#favourites/:kind',
       name: 'FavouriteList',
       component: FavouriteList,
       meta: {
