@@ -5,14 +5,14 @@
 
 Change and customize every section according to your need by configuring only one file.
 
-**Step 1** 
-open `portfolio.js` in the `src` directory
+### Step 1 
+Open `portfolio.js` in the `src` directory
 ```bash
 $ cd src/
 ```
 *Note: Please don't change any keys of any object to make the configuration simple*
 
-**Step 2**
+### Step 2
 Find `const home` in portfolio.js to configure details of home screen.
 *Note: Please don't change any keys of home object*
 ```javascript
@@ -39,7 +39,7 @@ const home = {
 }
 ```
 
-**Step 3**
+### Step 3
 Find `const work` in portfolio.js to configure details of work screen.
 *Note: No need to fill the `data` field of projects as it will be dynamically fetched from Github API using graphql.*
 ```javascript
@@ -104,7 +104,7 @@ const work = {
 };
 ```
 
-**Step 4**
+### Step 4
 Find `const awards` in portfolio.js to configure details of awards screen.
 *Note: You can leave the fields empty if not applicable*
 ```javascript
@@ -160,7 +160,7 @@ const awards = [
 ]
 ```
 
-**Step 5**
+### Step 5
 The project is using **[TMDB](https://www.themoviedb.org/?language=en-US)(The Movie Database)** API to showcase your favourite movies and tv shows. 
 
 > TMDB is free and amazing. A big thanks to all the contributors and developers of TMDB out there.
@@ -199,7 +199,7 @@ const TMDB = {
 }
 ```
 
-**Step 6**
+### Step 6
 Set your social media profiles in `const social`.
 ```javascript
 const  social = {
@@ -211,7 +211,7 @@ const  social = {
 };
 ```
 
-**Step 7**
+### Step 7
 Create the personal access token from github([steps](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)).
 Convert the access token to base64 from your browser's console
 ```bash
@@ -232,7 +232,7 @@ $ npm run dev
 ```
 
 
-## Deployment 📦 
+## 📦 Deployment  
 Once you have done with your customisation and setup. You need to put your website online!
 I highly recommend to use [Github Pages](https://cli.vuejs.org/guide/deployment.html#github-pages) to achieve this on the EASIEST WAY. 
 

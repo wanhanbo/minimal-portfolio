@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/rahuldkjain/minimal-portfolio"><img src="./src/assets/minimal-portfolio-banner.gif" alt="Personal Porfolio for developers" height="60"/></a></p>
+<p align="center"><a href="https://github.com/rahuldkjain/minimal-portfolio"><img src="./src/assets/minimal-portfolio-banner.gif" alt="Personal Porfolio for developers"/></a></p>
 <h1 align="center">:muscle: Awesome Personal Portfolio</h1>
 <p align="center">The minimal, responsive and easily customisable portfolio for developers.</p>
 <p align="center">
@@ -8,9 +8,7 @@
 <img src="https://img.shields.io/github/last-commit/rahuldkjain/minimal-portfolio?color=%238e5dee&style=plastic" alt="portfolio for software developer" />
 </p>
 
-![](./src/assets/portfolio.gif)
-
-**Note**: If you like the portfolio and want to use it to create your portfolio, please refer [customization](./CUSTOMIZE.md) manual. 
+<p align="center"><img src="./src/assets/portfolio.gif" alt="portfolio for developers" /></p>
 
 
 ## :zap: Pages
@@ -59,8 +57,11 @@ $ npm run dev
 
 ```
 
+## 🛠️ Customize
+If you like the portfolio and want to use it to create your own, please refer [customization manual.](./CUSTOMIZE.md) 
 
-## 🛠️ Technologies used
+
+## :technologist: Technologies used
 
 - [Vuejs](https://vuejs.org/)
 - [SCSS](https://sass-lang.com/documentation/syntax) 
@@ -77,7 +78,7 @@ This project is licensed under the GPL-3.0 License - see the [LICENSE.md](./LICE
 
 
 ## For the Future 
-If you want to **contribute** and make this much better for other developer have a look at [Contributing Manual](./CONTRIBUTING.md) to understand the contribution steps properly.
+If you want to **contribute** and make this much better for developers, pleae have a look at [Contributing Manual](./CONTRIBUTING.md) to understand the contribution steps properly.
 
 If you can help us with these. Please don't hesitate to open a [pull request](https://github.com/rahuldkjain/minimal-portfolio/pulls).
 
